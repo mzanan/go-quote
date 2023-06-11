@@ -10,7 +10,8 @@ module.exports = {
         accent: '#FF6600',
         logo: '#D9D9D90',
         body: '#3F3F3F',
-        linear: ''
+        comment: '#959595',
+        smokeBlack: '#1E1E1E'
       }
     },
   },

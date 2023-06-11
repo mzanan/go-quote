@@ -9,10 +9,10 @@
     </head>
     <body>
         <header>
-            <nav id="navbar" class="w-full lg:bg-surface">
+            <nav id="navbar" class="w-full lg:bg-surface shadow-sm">
                 <div class="flex flex-col lg:flex-row lg:container lg:mx-auto lg:max-w-[1184px]">
                     <div class="flex items-center h-[4.5rem] px-6 drop-shadow-sm bg-surface justify-between lg:drop-shadow-none">
-                        <div class="flex flex-1 items-center bg-gray-500">
+                        <div class="flex flex-1 items-center bg-gray-400">
                             <a href="./index.html">
                                 <svg width="83" height="41" viewBox="0 0 80 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 </svg>
@@ -83,19 +83,19 @@
                 </div>
             </nav>                   
         </header>
-        <main class="container max-w-[1184px] mx-auto flex flex-col gap-12">
-            <section class="section md:flex-row md:justify-between">
-                <div class="flex flex-col md:pt-[63px] w-[392px]">
+        <main class="container max-w-[1184px] mx-auto flex flex-col gap-12 mt-3">
+            <section class="section md:flex-row md:justify-between md:items-center">
+                <div class="flex flex-col md:pt-[63px] md:w-[312px]">
                     <h2 class="title">
                         <span class="text-primary">Get your </span>
                         <span class="text-secondary">no obligation </span>
                         <span class="text-primary">quote today!</span>
                     </h2>
                 
-                    <form class="flex flex-col gap-1 w-[312px]">
-                        <p class="text-lg mt-10 flex justify-center title text-primary mb-2">Enter your ZIP code</p>    
+                    <form class="flex flex-col gap-1">
+                        <p class="text-lg mt-10 flex justify-center subtitle text-primary mb-2">Enter your ZIP code</p>    
                         <label for="name">
-                            <input name="zip-code" placeholder="ZIP CODE" class="bg-transparent border-[1px] rounded-md w-full p-2.5 border-black"  />
+                            <input name="zip-code" placeholder="ZIP CODE" class="bg-transparent border-[1px] border-primary rounded-md w-full p-2.5" />
                         </label>
                     
                         <button class=" mt-auto rounded-lg py-4 bg-accent text-white hover:bg-accent font-semibold hidden md:block">
@@ -104,42 +104,82 @@
 
                         <div class="mt-3 flex justify-center">
                             <img src="./assets/images/lock.svg" alt="lock">
-                            <p class="text-sm ml-1">Your information will be safe</p>    
+                            <p class="text-sm ml-1 text-comment">Your information will be safe</p>    
                         </div>
                     </form>
                 </div>
 
-                <img src="./assets/images/no-obligation-quote.svg" alt="quote" class="md:w-[50%]">
+                <img src="./assets/images/no-obligation-quote.svg" alt="quote" class="md:w-[45%]">
             </section>
 
             
           
-            
-            <!-- YOUR CUSTOMERS -->
+
+            <!-- CARDS -->
             <section class="section">
-                <h2 class="subtitle">Finding Your Customers</h2>
-                <p class="text-base">We build out client’s businesses and brands by acquiring high value customers and advocates effiecently, innovatively and rapidly. MassNexus helps connect consumers with a variety of the best options in the industries they are aearching. By consolidating and presenting information in a friendly manner consumers are helped in making informed choices.</p>
                 <div class="flex flex-col md:flex-row items-center justify-between mt-5">
                     <div class="section__card">
-                        <img src="./assets/images/customers.svg" alt="Customers" class="h-40">
-                        <div>
-                            <h3 class="text-xl font-bold ">Customers</h3>
-                            <p class="text-base">We find people actively searching for your product.</p>
+                        <span class="section__card--header"></span>
+
+                        <div class="section__card--content">
+                            <div class="section__card--circle">
+                                <span class="title section__card--number">1</span>
+                            </div>
+                            
+                            <p class="section__card--title">Why you need insurance?</p>
+                            <p class="section__card--description">The first step to making a smart health insurance decision is to understand the value of health insurance and why you need it for yourself and your family.</p>
+                            <a href="#" class="section__card--link">Read More</a>
                         </div>
+                    </div>
+
+                    <div class="section__card">
+                        <div class="section__card--header"></div>
+
+                        <div class="section__card--content">
+                            <div class="section__card--circle">
+                                <span class="title section__card--number">2</span>
+                            </div>
+
+                            <p class="section__card--title">Health insurance quote</p>
+                            <p class="section__card--description">Join the many of people who have saved on their health insurance by shopping for health insurance quotes online with Quoteblock.com.</p>
+                            <a href="#" class="section__card--link">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="section__card">
+                        <div class="section__card--header"></div>
                         
-                    </div>
-                    <div class="section__card">
-                        <img src="./assets/images/advetisers.svg" alt="Advertisers" class="h-40">
-                        <div>
-                            <h3 class="text-xl font-bold ">Advertisers</h3>
-                            <p class="text-base">We bring customers directly to you in real time.</p>
+                        <div class="section__card--content">
+                            <div class="section__card--circle">
+                                <span class="title section__card--number">3</span>
+                            </div>
+
+                            <p class="section__card--title">Quoteblock.com</p>
+                            <p class="section__card--description">Is a trusted online source of health, life, auto and Medicare insurance for individuals, families and small business.</p>
+                            <a href="#" class="section__card--link">Read More</a>
                         </div>
+
                     </div>
-                    <div class="section__card">
-                        <img src="./assets/images/publishers.svg" alt="Publishers" class="h-40">
-                        <div>
-                            <h3 class="text-xl font-bold ">Publishers</h3>
-                            <p class="text-base">Through dynamic campaigns for especific verticals.</p>
+                </div>
+
+                <div class="testimonial__container relative">
+                    <svg class="absolute right-9" width="67" height="114" viewBox="0 0 67 114" xmlns="http://www.w3.org/2000/svg">
+                        <path class="fill-primary" d="M65.9506 32.674C70.2753 71.5957 49.7333 91.0565 21.6232 113.761C72.4365 13.2132 4.32358 100.787 1.6075e-08 32.674C1.6075e-08 14.7608 14.5215 0.239258 32.4347 0.239258C50.3479 0.239258 65.9506 14.7608 65.9506 32.674Z"/>
+                    </svg>
+                    <svg class="absolute right-0" width="67" height="114" viewBox="0 0 67 114" xmlns="http://www.w3.org/2000/svg">
+                        <path class="fill-secondary" d="M65.9506 32.674C70.2753 71.5957 49.7333 91.0565 21.6232 113.761C72.4365 13.2132 4.32358 100.787 1.6075e-08 32.674C1.6075e-08 14.7608 14.5215 0.239258 32.4347 0.239258C50.3479 0.239258 65.9506 14.7608 65.9506 32.674Z"/>
+                    </svg>
+                    
+                    
+                    <div class="border-[1px] border-primary rounded-xl px-10 py-6 mt-12 mx-10">
+                        <p class="testimonial__quote italic">My friend referred me to QuoteBlock and I could not be happier with the service I have received. Their customer service is outstanding. My agent Edward was extremely friendly and he was able to match me with the Health plan that best fit my needs.</p>
+                    </div>
+
+
+                    <div class="flex justify-end">
+                        <div class="w-60 mr-10 mt-3">
+                            <p class="testimonial__quote">Miry R, San Antonio, </p>
+                            <p class="testimonial__quote">TX - Medicare Beneficiary.</p>
                         </div>
                     </div>
                 </div>
@@ -150,28 +190,7 @@
 
             <div class="max-w-[1184px] overflow-hidden">
                 <div class="section__scroll">
-                    <img src="./assets/images/aetna.svg" alt="aetna logo"/>
-                    <img src="./assets/images/bravo.svg" alt="bravo logo"/>
-                    <img src="./assets/images/cartoon.svg" alt="cartoon logo"/>
-                    <img src="./assets/images/cigna.svg" alt="cigna logo"/>
-                    <img src="./assets/images/general.svg" alt="general logo"/>
-                    <img src="./assets/images/group.svg" alt="group logo"/>
-                    <img src="./assets/images/mutual.svg" alt="mutual logo"/>
-                    <img src="./assets/images/nbc.svg" alt="nbc logo"/>
-                    <img src="./assets/images/state.svg" alt="state logo"/>
-                    <img src="./assets/images/turner.svg" alt="turner logo"/>
-                    <img src="./assets/images/universal.svg" alt="universal logo"/>
-                    <img src="./assets/images/aetna.svg" alt="aetna logo"/>
-                    <img src="./assets/images/bravo.svg" alt="bravo logo"/>
-                    <img src="./assets/images/cartoon.svg" alt="cartoon logo"/>
-                    <img src="./assets/images/cigna.svg" alt="cigna logo"/>
-                    <img src="./assets/images/general.svg" alt="general logo"/>
-                    <img src="./assets/images/group.svg" alt="group logo"/>
-                    <img src="./assets/images/mutual.svg" alt="mutual logo"/>
-                    <img src="./assets/images/nbc.svg" alt="nbc logo"/>
-                    <img src="./assets/images/state.svg" alt="state logo"/>
-                    <img src="./assets/images/turner.svg" alt="turner logo"/>
-                    <img src="./assets/images/universal.svg" alt="universal logo"/>
+                    
                 </div>
             </div>
         </section>
