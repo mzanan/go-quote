@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./dist/styles/index.css" rel="stylesheet">
+        <link href="./dist/libs/splidejs/css/splide.min.css" rel="stylesheet">
+        <script src="./dist/libs/splidejs/js/splide.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav id="navbar" class="w-full lg:bg-surface">
+                <div class="flex flex-col lg:flex-row lg:container lg:mx-auto lg:max-w-[1184px]">
+                    <div class="flex items-center h-[4.5rem] px-6 drop-shadow-sm bg-surface justify-between lg:drop-shadow-none">
+                        <div class="flex flex-1 items-center bg-gray-500">
+                            <a href="./index.html">
+                                <svg width="83" height="41" viewBox="0 0 80 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="flex lg:hidden">
+                            <button type="button" id="navbar-btn" class="text-body focus:outline-none">
+                                <svg class="h-8 w-8 fill-current" viewBox="0 0 24 24">
+                                    <path id='navbar-btn-close' fill-rule="evenodd" clip-rule="evenodd" d="M3 7h18v2H3V7zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
+                                    <path id='navbar-btn-open' d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="navbar-menu" class="transition-all duration-700 h-0 bg-surface overflow-hidden lg:h-[4.5rem] lg:flex-1 lg:bg-surface lg:transition-none">
+                    <ul class="flex flex-col justify-center gap-6 p-6 pr-4 pt-12 lg:flex-row lg:py-0 lg:justify-end lg:h-full lg:items-center lg:gap-8">
+                        <li>
+                            <a href="./health-insurance.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                               Health Insurance
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./medicare-plans.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                Medicare Plans
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./about-us.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                About us
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./contact-us.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                Contact Us
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./privacy-policy.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                Privacy Policy
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./terms-of-service.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                Terms of Services
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    </div>   
+                </div>
+            </nav>                   
+        </header>
+        <main class="container max-w-[1184px] mx-auto flex flex-col gap-12">
+            <section class="section md:flex-row md:justify-between">
+                <div class="flex flex-col md:pt-[63px] w-[392px]">
+                    <h2 class="title">
+                        <span class="text-primary">Get your </span>
+                        <span class="text-secondary">no obligation </span>
+                        <span class="text-primary">quote today!</span>
+                    </h2>
+                
+                    <form class="flex flex-col gap-1 w-[312px]">
+                        <p class="text-lg mt-10 flex justify-center title text-primary mb-2">Enter your ZIP code</p>    
+                        <label for="name">
+                            <input name="zip-code" placeholder="ZIP CODE" class="bg-transparent border-[1px] rounded-md w-full p-2.5 border-black"  />
+                        </label>
+                    
+                        <button class=" mt-auto rounded-lg py-4 bg-accent text-white hover:bg-accent font-semibold hidden md:block">
+                            Search
+                        </button>
+
+                        <div class="mt-3 flex justify-center">
+                            <img src="./assets/images/lock.svg" alt="lock">
+                            <p class="text-sm ml-1">Your information will be safe</p>    
+                        </div>
+                    </form>
+                </div>
+
+                <img src="./assets/images/no-obligation-quote.svg" alt="quote" class="md:w-[50%]">
+            </section>
+
+            
+          
+            
+            <!-- YOUR CUSTOMERS -->
+            <section class="section">
+                <h2 class="subtitle">Finding Your Customers</h2>
+                <p class="text-base">We build out client’s businesses and brands by acquiring high value customers and advocates effiecently, innovatively and rapidly. MassNexus helps connect consumers with a variety of the best options in the industries they are aearching. By consolidating and presenting information in a friendly manner consumers are helped in making informed choices.</p>
+                <div class="flex flex-col md:flex-row items-center justify-between mt-5">
+                    <div class="section__card">
+                        <img src="./assets/images/customers.svg" alt="Customers" class="h-40">
+                        <div>
+                            <h3 class="text-xl font-bold ">Customers</h3>
+                            <p class="text-base">We find people actively searching for your product.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="section__card">
+                        <img src="./assets/images/advetisers.svg" alt="Advertisers" class="h-40">
+                        <div>
+                            <h3 class="text-xl font-bold ">Advertisers</h3>
+                            <p class="text-base">We bring customers directly to you in real time.</p>
+                        </div>
+                    </div>
+                    <div class="section__card">
+                        <img src="./assets/images/publishers.svg" alt="Publishers" class="h-40">
+                        <div>
+                            <h3 class="text-xl font-bold ">Publishers</h3>
+                            <p class="text-base">Through dynamic campaigns for especific verticals.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <section class="section bg-secondary items-center overflow-hidden">
+            <h2 class="subtitle">Our Clients</h2>
+
+            <div class="max-w-[1184px] overflow-hidden">
+                <div class="section__scroll">
+                    <img src="./assets/images/aetna.svg" alt="aetna logo"/>
+                    <img src="./assets/images/bravo.svg" alt="bravo logo"/>
+                    <img src="./assets/images/cartoon.svg" alt="cartoon logo"/>
+                    <img src="./assets/images/cigna.svg" alt="cigna logo"/>
+                    <img src="./assets/images/general.svg" alt="general logo"/>
+                    <img src="./assets/images/group.svg" alt="group logo"/>
+                    <img src="./assets/images/mutual.svg" alt="mutual logo"/>
+                    <img src="./assets/images/nbc.svg" alt="nbc logo"/>
+                    <img src="./assets/images/state.svg" alt="state logo"/>
+                    <img src="./assets/images/turner.svg" alt="turner logo"/>
+                    <img src="./assets/images/universal.svg" alt="universal logo"/>
+                    <img src="./assets/images/aetna.svg" alt="aetna logo"/>
+                    <img src="./assets/images/bravo.svg" alt="bravo logo"/>
+                    <img src="./assets/images/cartoon.svg" alt="cartoon logo"/>
+                    <img src="./assets/images/cigna.svg" alt="cigna logo"/>
+                    <img src="./assets/images/general.svg" alt="general logo"/>
+                    <img src="./assets/images/group.svg" alt="group logo"/>
+                    <img src="./assets/images/mutual.svg" alt="mutual logo"/>
+                    <img src="./assets/images/nbc.svg" alt="nbc logo"/>
+                    <img src="./assets/images/state.svg" alt="state logo"/>
+                    <img src="./assets/images/turner.svg" alt="turner logo"/>
+                    <img src="./assets/images/universal.svg" alt="universal logo"/>
+                </div>
+            </div>
+        </section>
+        <main class="container max-w-[1184px] mx-auto flex flex-col gap-12">
+            <section class="section">
+                <h2 class="subtitle">Our Team</h2>
+                <div class="md:flex md:flex-row md:gap-8">
+                    <img src="./assets/images/our-team.svg" alt="Our Team Picture">
+                    <div class="flex items-center">
+                        <p class="font-regular">
+                            At MassNexus the key to creating remarkable experiences is our passion to drive and deliver results. Once we commit to an idea or task, our team plans and executes with passion. Providing fantastic service and support is not something we take lightly, it's what compels us to get up in the morning and make a difference.
+                            <br />
+                            <br />
+                            MassNexus customers are focused on growing their businesses and providing value to their own customers. We strive to provide them with the best tools to do just that. Teams openly collaborate to solve problems, and we all work together to make our service the best it can be.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="section lg:flex-row md:justify-between md:items-center">
+                <div class="section__card section__card--icon md:mx-0">
+                    <img class="section__icon" src="./assets/images/Icon-services.svg" alt="Services Icon" />
+                    <div class="section__details">
+                        <h3 class="font-bold text-3xl">Services</h3>
+                        <ul class="section__list">
+                            <li>Advanced Tracking</li>
+                            <li>Custom Campaigns</li>
+                            <li>Content Partnerships</li>
+                            <li>Targeted Consumers</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section__card section__card--icon md:mx-0">
+                    <img class="section__icon" src="./assets/images/icon-solutions.svg" alt="Solutions">
+                    <div class="section__details">
+                        <h3 class="font-bold text-3xl">Solutions</h3>
+                        <ul class="section__list">
+                            <li>Customer Acquisition</li>
+                            <li>Acquisition Channels</li>
+                            <li>Multiple Verticals</li>
+                            <li>Network Access</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section__card section__card--icon md:mx-0">
+                    <img class="section__icon" style="margin-top: 40px;" src="./assets/images/icon-publishers.svg" alt="Publishers">
+                    <div class="section__details">
+                        <h3 class="font-bold text-3xl">Publishers</h3>
+                        <ul class="section__list">
+                            <li>Leading Brand Advertisers</li>
+                            <li>Exclusive Offers</li>
+                            <li>Level Of Service & Support</li>
+                            <li>Creative Optimization</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="subtitle">Our Verticals</h2>
+                <p class="text-lg mt-6">Our array of verticals includes the following. Finding a spot in the marketplace can be tricky, but it doesn't have to be. We can help you to reach and engage new buyers, maximize interest in your brand and cost-effectively make busin.</p>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-10 mx-auto mt-12 md:mt-20">
+                    <div class="vertical-card">
+                        <img src="./assets/images/icon-auto-insurance.svg" alt="Auto Insurance" width="69" height="69" />
+                        <p>Auto Insurance</p>
+                    </div>
+                    <div class="vertical-card">
+                        <img src="./assets/images/icon-automotive.svg" alt="Automotive" width="69" height="69" />
+                        <p>Automotive</p>
+                    </div>
+                    <div class="vertical-card">
+                        <img src="./assets/images/icon-education.svg" alt="Education" width="69" height="69" />
+                        <p>Education</p>
+                    </div>
+                    <div class="vertical-card">
+                        <img src="./assets/images/icon-entertainment.svg" width="69" height="69" alt="Entertainment"/>
+                        <p>Entertainment</p>
+                    </div>
+                    <div class="vertical-card">
+                        <img src="./assets/images/icon-life-insurance.svg" width="69" height="69" alt="Life Insurance"/>
+                        <p>Life Insurance</p>
+                    </div>
+                    <div class="vertical-card">
+                        <img src="./assets/images/icon-home-insurance.svg" width="69" height="69" alt="Home Insurance"/>
+                        <p>Home Insurance</p>
+                    </div>
+                    <div class="vertical-card">
+                        <img src="./assets/images/icon-health-insurance.svg" width="69" height="69" alt="Health Insurance"/>
+                        <p>Health Insurance</p>
+                    </div>
+                    <div class="vertical-card">
+                        <img src="./assets/images/icon-gaming.svg" width="69" height="69" alt="Gaming"/>
+                        <p>Gaming</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-secondary mt-20">
+            <div class="md:flex md:flex-row md:justify-evenly">
+                <section class="section gap-4 md:flex-1 max-w-[312px]">
+                    <h3 class="subtitle text-left">Company</h3>
+                    <p>
+                        MassNexus specializes in direct customer acquisition for your product lines. We will custom-tailor marketing strategies that are right for you and your business. Through ours in-house properties and strategic partnerships...
+                        <br/>
+                        <a href=".#" class="text-primary">Read more.</a>
+                    </p>
+                </section>
+                <section class="section gap-4">
+                    <h3 class="subtitle text-left">Get In Touch</h3>
+                    <div class="flex gap-4">
+                        <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 18.3002V0.700195H22V18.3002H0ZM11 10.6002L2.2 5.1002V16.1002H19.8V5.1002L11 10.6002ZM11 8.4002L19.8 2.9002H2.2L11 8.4002Z" fill="#3F3F3F"/>
+                        </svg>
+                        <span>info@massnexus.com</span>
+                    </div>
+                    <div class="flex gap-4">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.7167 22C18.0889 22 15.5275 21.4141 13.0326 20.2424C10.5376 19.0707 8.32741 17.5226 6.402 15.598C4.47659 13.6734 2.92844 11.4632 1.75756 8.96744C0.586667 6.47167 0.000814815 3.9103 0 1.28333C0 0.916667 0.122222 0.611111 0.366667 0.366667C0.611111 0.122222 0.916667 0 1.28333 0H6.23333C6.51852 0 6.77315 0.0916665 6.99722 0.275C7.2213 0.458333 7.3537 0.692593 7.39444 0.977778L8.18889 5.25556C8.22963 5.54074 8.22433 5.80067 8.173 6.03533C8.12167 6.27 8.00474 6.47859 7.82222 6.66111L4.88889 9.65555C5.74444 11.1222 6.81389 12.4972 8.09722 13.7806C9.38056 15.0639 10.7963 16.1741 12.3444 17.1111L15.2167 14.2389C15.4 14.0556 15.6396 13.9183 15.9353 13.827C16.2311 13.7357 16.5212 13.7101 16.8056 13.75L21.0222 14.6056C21.3074 14.6667 21.5417 14.8044 21.725 15.0187C21.9083 15.233 22 15.4823 22 15.7667V20.7167C22 21.0833 21.8778 21.3889 21.6333 21.6333C21.3889 21.8778 21.0833 22 20.7167 22Z" fill="#3F3F3F"/>
+                        </svg>
+                        <span>1(323) 761-9829</span>
+                    </div>
+                </section>
+                <section class="section gap-4 md:flex-1 max-w-[312px]">
+                    <h3 class="subtitle text-left">Connect</h3>
+                    <p>
+                        Connect with us, and follow or regular updates, specials, and more.
+                    </p>
+                    <div class="flex gap-8 mt-2">
+                        <a href="#">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 11.0273C22 4.95534 17.072 0.0273438 11 0.0273438C4.928 0.0273438 0 4.95534 0 11.0273C0 16.3513 3.784 20.7843 8.8 21.8073V14.3273H6.6V11.0273H8.8V8.27734C8.8 6.15434 10.527 4.42734 12.65 4.42734H15.4V7.72734H13.2C12.595 7.72734 12.1 8.22234 12.1 8.82734V11.0273H15.4V14.3273H12.1V21.9723C17.655 21.4223 22 16.7363 22 11.0273Z" fill="#3F3F3F"/>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 0C4.92545 0 0 4.92545 0 11C0 17.0746 4.92545 22 11 22C17.0746 22 22 17.0746 22 11C22 4.92545 17.0746 0 11 0ZM16.2864 8.29174C16.2937 8.40714 16.2937 8.52746 16.2937 8.64531C16.2937 12.2498 13.5487 16.4018 8.53237 16.4018C6.98549 16.4018 5.55156 15.9525 4.34353 15.179C4.56451 15.2036 4.77567 15.2134 5.00156 15.2134C6.27835 15.2134 7.45201 14.7812 8.3875 14.0496C7.18929 14.025 6.18259 13.2393 5.83884 12.1589C6.2587 12.2203 6.63683 12.2203 7.06897 12.1098C6.45201 11.9845 5.89746 11.6494 5.49955 11.1615C5.10164 10.6736 4.8849 10.0631 4.88616 9.43348V9.39911C5.2471 9.6029 5.67188 9.72812 6.11629 9.74531C5.74269 9.49633 5.4363 9.159 5.22429 8.76324C5.01228 8.36749 4.9012 7.92553 4.90089 7.47656C4.90089 6.9683 5.03348 6.50424 5.27165 6.10156C5.95646 6.94458 6.81099 7.63405 7.77971 8.12518C8.74843 8.61631 9.80966 8.8981 10.8944 8.95223C10.5089 7.09844 11.8937 5.59821 13.5585 5.59821C14.3442 5.59821 15.0513 5.92723 15.5498 6.45759C16.1661 6.34219 16.7554 6.11138 17.2808 5.80201C17.077 6.43304 16.6498 6.96585 16.0826 7.30223C16.6326 7.2433 17.1629 7.09107 17.654 6.87746C17.2833 7.42254 16.8192 7.90625 16.2864 8.29174Z" fill="#3F3F3F"/>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.1391 6.69565C20.3101 4.71884 18.987 3.1087 17.1696 1.86522C16.213 1.25942 15.2565 0.797101 14.3 0.478261C13.3116 0.15942 12.2116 0 11 0C9.46956 0 8.03478 0.286957 6.69565 0.86087C4.71884 1.68986 3.1087 3.01304 1.86522 4.83043C1.25942 5.81884 0.797101 6.7913 0.478261 7.74783C0.15942 8.70435 0 9.78841 0 11C0 12.5304 0.286957 13.9652 0.86087 15.3043C1.68986 17.2812 3.01304 18.8913 4.83043 20.1348C5.81884 20.7406 6.7913 21.2029 7.74783 21.5217C8.70435 21.8406 9.78841 22 11 22C12.5304 22 13.9652 21.713 15.3043 21.1391C17.2812 20.3101 18.8913 18.987 20.1348 17.1696C20.7406 16.213 21.2029 15.2565 21.5217 14.3C21.8406 13.3116 22 12.2116 22 11C22 9.46956 21.713 8.03478 21.1391 6.69565ZM19.8 14.7304C18.971 16.5159 17.8072 17.9029 16.3087 18.8913C15.5754 19.4014 14.7464 19.8 13.8217 20.087C12.9609 20.3739 12.0203 20.5174 11 20.5174V11H1.48261C1.48261 9.66087 1.72174 8.41739 2.2 7.26956C3.02899 5.48406 4.19275 4.0971 5.6913 3.1087C6.42464 2.59855 7.25362 2.2 8.17826 1.91304C9.03913 1.62609 9.97971 1.48261 11 1.48261V11H20.5174C20.5174 12.3391 20.2783 13.5826 19.8 14.7304Z" fill="#3F3F3F"/>
+                            </svg>
+                        </a>
+                    </div>
+                </section>
+            </div>
+            <section class="section bg-surface">
+                <div class="flex items-center flex-col gap-1 font-light">
+                    <span>2021 Vertical Media Brands LLC,</span>
+                    <span>All Right Reserved.</span>
+                    <div class="flex gap-2">
+                        <a>Privacy Policy</a>|
+                        <a>Terms of Use</a>|
+                        <a>Contact Us</a>
+                    </div>
+                </div>
+                
+            </section>
+        </footer>
+
+        <script src="./assets/index.js"></script>
+        <script type="text/javascript">
+            (() => {
+                Splide.defaults = {
+                    arrows: false,
+                    drag: true,
+                    autoplay: true
+                }
+                new Splide( '.splide' ).mount();
+            })()
+        </script>
+    </body>
+</html>
