@@ -12,7 +12,7 @@
             <nav id="navbar" class="w-full lg:bg-surface shadow-sm">
                 <div class="flex flex-col lg:flex-row lg:container lg:mx-auto lg:max-w-[1184px]">
                     <div class="flex items-center h-[4.5rem] px-6 drop-shadow-sm bg-surface justify-between lg:drop-shadow-none">
-                        <div class="flex flex-1 items-center bg-gray-400">
+                        <div class="flex items-center bg-gray-400">
                             <a href="./index.html">
                                 <svg width="83" height="41" viewBox="0 0 80 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 </svg>
@@ -84,9 +84,9 @@
             </nav>                   
         </header>
         <main class="container max-w-[1184px] mx-auto flex flex-col gap-12 mt-3">
-            <section class="section md:flex-row md:justify-between md:items-center mt-[75px]">
-                <div class="flex flex-col md:pt-[63px] md:w-[312px]">
-                    <p class="title">
+            <section class="section md:flex-row md:justify-between md:items-center lg:mt-16">
+                <div class="flex flex-col md:pt-[63px]">
+                    <p class="title w-[312px]">
                         <span class="text-primary">Get your </span>
                         <span class="text-secondary">no obligation </span>
                         <span class="text-primary">quote today!</span>
@@ -94,11 +94,11 @@
                 
                     <form class="flex flex-col gap-1">
                         <p class="subtitle text-primary mt-10 mb-4">Enter your ZIP code</p>
-                        <label for="name">
+                        <label for="zip-code">
                             <input name="zip-code" placeholder="ZIP CODE" class="bg-transparent border border-primary rounded-md w-full p-2.5" />
                         </label>
                     
-                        <button class=" mt-auto rounded-lg py-4 bg-accent text-white hover:bg-accent font-semibold hidden md:block">
+                        <button class="mt-auto rounded-lg py-4 bg-accent text-white hover:bg-accent font-semibold md:block">
                             Search
                         </button>
 
@@ -109,11 +109,11 @@
                     </form>
                 </div>
 
-                <img src="./assets/images/no-obligation-quote.svg" alt="quote" class="md:w-[45%]">
+                    <img src="./assets/images/no-obligation-quote.svg" alt="quote" class="md:w-[45%]">
             </section>
 
             <!-- CARDS -->
-            <section class="section">
+            <section class="section mb-10">
                 <div class="flex flex-col md:flex-row items-center justify-between mt-5">
                     <div class="section__card">
                         <span class="section__card--header"></span>
@@ -160,21 +160,19 @@
                 </div>
 
                 <div class="relative">
-                    <svg class="absolute right-9" width="67" height="114" viewBox="0 0 67 114" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="absolute md:right-9 right-12 md:top-0 top-8 md:w-16 w-9" viewBox="0 0 67 114" xmlns="http://www.w3.org/2000/svg">
                         <path class="fill-primary" d="M65.9506 32.674C70.2753 71.5957 49.7333 91.0565 21.6232 113.761C72.4365 13.2132 4.32358 100.787 1.6075e-08 32.674C1.6075e-08 14.7608 14.5215 0.239258 32.4347 0.239258C50.3479 0.239258 65.9506 14.7608 65.9506 32.674Z"/>
                     </svg>
-                    <svg class="absolute right-0" width="67" height="114" viewBox="0 0 67 114" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="absolute md:right-0 right-8 md:top-0 top-8 md:w-16 w-9" viewBox="0 0 67 114" xmlns="http://www.w3.org/2000/svg">
                         <path class="fill-secondary" d="M65.9506 32.674C70.2753 71.5957 49.7333 91.0565 21.6232 113.761C72.4365 13.2132 4.32358 100.787 1.6075e-08 32.674C1.6075e-08 14.7608 14.5215 0.239258 32.4347 0.239258C50.3479 0.239258 65.9506 14.7608 65.9506 32.674Z"/>
                     </svg>
-                    
-                    
-                    <div class="border-[1px] border-primary rounded-xl px-10 py-6 mt-12 mx-10">
+                                        
+                    <div class="border-[1px] border-primary rounded-xl md:px-10 md:py-6 p-2 pr-8 mt-8 mx-10">
                         <p class="testimonial__quote italic">My friend referred me to QuoteBlock and I could not be happier with the service I have received. Their customer service is outstanding. My agent Edward was extremely friendly and he was able to match me with the Health plan that best fit my needs.</p>
                     </div>
 
-
                     <div class="flex justify-end">
-                        <div class="w-60 mr-10 mt-3">
+                        <div class="w-60 md:mr-10 mt-3">
                             <p class="testimonial__quote">Miry R, San Antonio, </p>
                             <p class="testimonial__quote">TX - Medicare Beneficiary.</p>
                         </div>
@@ -183,18 +181,18 @@
             </section>
         </main>
 
-        <section class="section bg-primary items-center mt-4 py-16">
-            <div class="flex flex-col w-[1184px]">
-                <div class="w-[500px]">
+        <section class="section bg-primary items-center mt-4 md:py-16 pt-16">
+            <div class="flex flex-col md:w-[1184px]">
+                <div class="md:w-[500px] w-[300px]">
                     <p class="title">
                         <span class="text-surface">Review Plans.</span>
                         <span class="text-secondary">Find the right plan </span>
                         <span class="text-surface">that fits your needs.</span>
                     </p>
-                    <p class="text-surface mt-8 text-[22px] font-normal leading-[26px] mb-20">Get plan reviews from trusted national and local insurance companies.</p>
+                    <p class="text-surface text-[22px] font-normal leading-[26px] mt-8 md:mb-20 mb-10">Get plan reviews from trusted national and local insurance companies.</p>
                 </div>
 
-                <div class="flex flex-row justify-between">
+                <div class="flex md:flex-row flex-col md:justify-between items-center">
                     <p class="review__card">
                         Possibly save time & money by using QuoteBlock.com to compare Medicare plans from multiple companies.
                     </p>
@@ -297,9 +295,9 @@
                             <span class="footer__text font-bold  text-secondary">QuoteBlock.com</span>
                         </p>
 
-                        <span class="footer__text font-semibold">All Right Reserved.</span>
+                        <span class="footer__text font-semibold">All Right Reserved</span>
                     </div>
-                    <div class="flex gap-4 fill-surface mt-10">
+                    <div class="flex gap-4 fill-surface mt-10 mb-20">
                         <span>
                             The content of the website is provided for informational purposes only. No content of the website is intended to constitute or be a substitute for professional advice. In addition, this web site may contain links to third-party web sites provided as a courtesy. They are not intended to nor do they constitute an endorsement of the linked materials. When clicking on such links, please note that you are exiting this site and navigating to another. QuoteBlock.com is not responsible for the content of such websites. Email support@quoteblock.com can be used to revoke consent. Can be revoked through any reasonable means.
                         </span>

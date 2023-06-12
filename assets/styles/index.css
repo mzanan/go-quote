@@ -31,7 +31,7 @@
     }
 
     .section__card {
-        @apply flex flex-col justify-center items-center gap-5 text-center shadow-lg rounded-3xl w-[300px];
+        @apply flex flex-col justify-center items-center gap-5 text-center shadow-lg rounded-3xl w-[300px] mb-10;
     }
 
     .section__details {
@@ -79,11 +79,11 @@
     }
 
     .testimonial__quote {
-        @apply text-[20px] leading-6 font-light text-smokeBlack;
+        @apply md:text-[20px] text-[18px] leading-6 font-light text-smokeBlack;
     }
 
     .review__card {
-        @apply text-[20px] w-[234px] text-surface border-l-4 pl-6 border-secondary h-min;
+        @apply text-[20px] w-[234px] text-surface border-l-4 pl-6 border-secondary h-min mb-12;
     }
 
     .footer__text {
