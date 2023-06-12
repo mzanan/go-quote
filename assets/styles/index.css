@@ -47,11 +47,11 @@
     }
 
     .section__card--title {
-        @apply text-2xl font-black text-primary h-14;
+        @apply text-2xl font-black text-primary h-14 w-56;
     }
 
     .section__card--description {
-        @apply h-48 text-left text-smokeBlack lg:text-[20px] text-[18px];
+        @apply text-left text-smokeBlack lg:text-[20px] text-[18px] mt-3 mb-5;
     }
 
     .link {
