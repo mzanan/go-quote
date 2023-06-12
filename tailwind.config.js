@@ -10,7 +10,8 @@ module.exports = {
         accent: '#FF6600',
         body: '#3F3F3F',
         comment: '#959595',
-        smokeBlack: '#1E1E1E'
+        smokeBlack: '#1E1E1E',
+        inputs: "#F1F1F1"
       }
     },
   },
