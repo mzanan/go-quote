@@ -91,7 +91,9 @@
                         <span class="text-secondary">no obligation </span>
                         <span class="text-primary">quote today!</span>
                     </p>
-                
+                    
+                    <img src="./assets/images/no-obligation-quote.svg" alt="quote" class="md:hidden">
+                    
                     <form class="flex flex-col gap-1">
                         <p class="subtitle text-primary mt-10 mb-4">Enter your ZIP code</p>
                         <label for="zip-code">
@@ -109,10 +111,10 @@
                     </form>
                 </div>
 
-                    <img src="./assets/images/no-obligation-quote.svg" alt="quote" class="md:w-[45%]">
+                    <img src="./assets/images/no-obligation-quote.svg" alt="quote" class="max-md:hidden">
             </section>
 
-            <!-- CARDS -->
+            
             <section class="section mb-10">
                 <div class="flex flex-col md:flex-row items-center justify-between mt-5">
                     <div class="section__card">
@@ -181,36 +183,38 @@
             </section>
         </main>
 
-        <section class="section bg-primary items-center mt-4 md:py-16 pt-16">
-            <div class="flex flex-col md:w-[1184px]">
-                <div class="md:w-[500px] w-[300px]">
-                    <p class="title">
-                        <span class="text-surface">Review Plans.</span>
-                        <span class="text-secondary">Find the right plan </span>
-                        <span class="text-surface">that fits your needs.</span>
-                    </p>
-                    <p class="text-surface text-[22px] font-normal leading-[26px] mt-8 md:mb-20 mb-10">Get plan reviews from trusted national and local insurance companies.</p>
-                </div>
+        <main class="w-full bg-primary mx-auto flex flex-col gap-12">
+            <section class="section items-center mt-4 md:py-16 pt-16">
+                <div class="flex flex-col max-w-[1184px] w-full max-lg:items-center">
+                    <div class="md:max-w-[500px] max-w-[300px]">
+                        <p class="title">
+                            <span class="text-surface">Review Plans.</span>
+                            <span class="text-secondary">Find the right plan </span>
+                            <span class="text-surface">that fits your needs.</span>
+                        </p>
+                        <p class="text-surface text-[22px] font-normal leading-[26px] mt-8 mb-10">Get plan reviews from trusted national and local insurance companies.</p>
+                    </div>
 
-                <div class="flex md:flex-row flex-col md:justify-between items-center">
-                    <p class="review__card">
-                        Possibly save time & money by using QuoteBlock.com to compare Medicare plans from multiple companies.
-                    </p>
-                    <p class="review__card">
-                        Get your questions answered. Understand what you are reviewing by speaking with one of our licensed insurance agents. They will also check your eligibility to enroll.
-                    </p>
-                    <p class="review__card">
-                        Get fast results by receiving a free no obligation plan review within minutes after submitting your form.
-                    </p>
+                    <div class="section lg:flex-row md:justify-between items-center">
+                        <p class="review__card">
+                            Possibly save time & money by using QuoteBlock.com to compare Medicare plans from multiple companies.
+                        </p>
+                        <p class="review__card">
+                            Get your questions answered. Understand what you are reviewing by speaking with one of our licensed insurance agents. They will also check your eligibility to enroll.
+                        </p>
+                        <p class="review__card">
+                            Get fast results by receiving a free no obligation plan review within minutes after submitting your form.
+                        </p>
+                    </div>
                 </div>
-            </div>
+            </section>
+        </main>
 
-            
-        </section>
         <main class="container max-w-[1184px] mx-auto flex flex-col gap-12">
-            <section class="section md:flex-row md:justify-between md:items-center">
-                <div class="flex flex-col md:pt-[63px] md:w-[500px]">
-                    <div class="w-[400px]">
+            <section class="section lg:flex-row lg:justify-between">
+                <div class="flex flex-col md:pt-[63px] max-lg:items-center">
+                    <img src="./assets/images/plan-review.svg" alt="plan-review" class="max-lg:block lg:hidden max-lg:mb-20">
+                    <div class="max-w-[400px]">
                         <p class="title">
                             <span class="text-secondary">QuoteBlock</span>
                             <span class="text-primary ml-[-10px]">.com gives you free no obligation fast plan review.</span>
@@ -223,14 +227,14 @@
                             We can help you find the most affordable insurance rate for you and your family from the trusted local and national insurance companies in your area.
                         </p>
                     </div>
-                
-                    <form class="flex flex-col gap-1 w-[312px]">
+
+                    <form class="flex flex-col gap-1 lg:w-[312px] max-lg:max-w-[400px] max-lg:w-full">
                         <p class="subtitle text-primary mt-10 mb-4">Enter your ZIP code</p>
                         <label for="name">
                             <input name="zip-code" placeholder="ZIP CODE" class="bg-transparent border border-primary rounded-md w-full p-2.5" />
                         </label>
                     
-                        <button class=" mt-auto rounded-lg py-4 bg-accent text-white hover:bg-accent font-semibold hidden md:block">
+                        <button class="mt-auto rounded-lg py-4 bg-accent text-white hover:bg-accent font-semibold md:block">
                             Search
                         </button>
 
@@ -241,28 +245,28 @@
                     </form>
                 </div>
 
-                <img src="./assets/images/plan-review.svg" alt="plan-review" class="md:w-[45%]">
+                <img src="./assets/images/plan-review.svg" alt="plan-review" class="max-lg:hidden">
             </section>
         </main>
 
         <footer class="flex flex-col items-center bg-primary text-surface mt-20">
-            <div class="w-[1140px] mt-5 px-10 py-6 mx-20">
-                <div class="flex flex-col md:flex-row items-start justify-between">
-                    <section class="section gap-4 flex-row mb-20">
+            <div class="max-w-[1184px] w-full mt-5 px-14 py-6 mx-20">
+                <div class="flex justify-between lg:flex-row lg:items-start max-lg:flex-col max-lg:items-center">
+                    <section class="section gap-4 lg:mb-14">
                         <div class="flex flex-col gap-1">
                             <span class="footer__text font-normal">Call to speak with a licensed insurance agent</span>
                             <span class="footer__text font-semibold">M-F 9am to 7pm EST</span>
                     </section>
 
-                    <section class="section flex-row gap-4">
-                        <div class="flex items-center gap-1 ">
+                    <section class="section flex-row gap-4 ">
+                        <div class="flex items-center gap-1">
                             <img src="./assets/images/telephone.svg" alt="telephone">
                             <a href="#" class="footer__text font-semibold">1-833-888-0586 TTY 711</a>
                         </div>
                     </section>
                 </div>
 
-                <div class="flex justify-between mb-20">
+                <div class="flex justify-between max-lg:flex-col max-lg:items-center mb-4">
                     <section class="section gap-2 flex-row">
                         <img src="./assets/images/help-center.svg" alt="help-center">
                         <a href="#" class="footer__text underline decoration-solid">Privacy Policy</a>
@@ -280,8 +284,8 @@
                 </div>
             </div>
 
-            <div class="w-[1200px]">
-                <section class="section mb-20">
+            <div class="max-w-[1184px] w-full">
+                <section class="section mb-14">
                     <p>
                         QuoteBlock Insurance Services is a division of QuoteBlock, DBA: QuoteBlock.com. ©2023 QuoteBlock Insurance Services. All rights reserved. We do not offer every plan available in your area. Any information we provide is limited to those plans we do offer in your area. Please contact Medicare.gov or 1-800-MEDICARE to get information on all of your options. QuoteBlock represents Medicare Advantage [HMO, PPO, or PFFS] organizations and/or Medicare-approved Part D sponsors that have a Medicare contract. Enrollment depends on the plan’s contract renewal. QuoteBlock takes no responsibility and assumes no liability for any content posted by consumers or any third party. By completing the contact form above or calling the number listed above, you will be directed to a licensed sales agent who can answer your questions and provide information about Medicare Advantage, Prescription Drug (Part D) and Medicare Supplement insurance plans. Neither QuoteBlock Insurance Services nor its agents are connected with or endorsed by the U.S. government or the federal Medicare program. Availability of insurance companies and products are dependent on your resident zip code. Not all plans offer all of these benefits. Benefits may vary by carrier and location. Limitations and exclusions may apply. **Information related to DOB and gender is not needed for Medicare Advantage and Part D plans. *The Medicare Advantage and Prescription Drug Plan Annual Enrollment Period (AEP) runs from October 15-December 7. During this time, Medicare recipients can evaluate their current coverage and enroll in new plans for the upcoming year. 
                         Enrollment in a plan may be limited to certain times of the year unless you qualify for a special election period or you are in your Medicare Initial Election Period.
@@ -292,12 +296,12 @@
                     <div class="flex items-center flex-col gap-1 font-light">
                         <p>
                             <span class="footer__text font-bold">© 2023</span>
-                            <span class="footer__text font-bold  text-secondary">QuoteBlock.com</span>
+                            <span class="footer__text font-bold text-secondary">QuoteBlock.com</span>
                         </p>
 
                         <span class="footer__text font-semibold">All Right Reserved</span>
                     </div>
-                    <div class="flex gap-4 fill-surface mt-10 mb-20">
+                    <div class="flex gap-4 fill-surface mt-8 mb-10">
                         <span>
                             The content of the website is provided for informational purposes only. No content of the website is intended to constitute or be a substitute for professional advice. In addition, this web site may contain links to third-party web sites provided as a courtesy. They are not intended to nor do they constitute an endorsement of the linked materials. When clicking on such links, please note that you are exiting this site and navigating to another. QuoteBlock.com is not responsible for the content of such websites. Email support@quoteblock.com can be used to revoke consent. Can be revoked through any reasonable means.
                         </span>

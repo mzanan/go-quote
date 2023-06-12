@@ -63,7 +63,7 @@
     }
 
     .section__card--description {
-        @apply h-44 text-left text-smokeBlack text-[20px];
+        @apply h-48 text-left text-smokeBlack lg:text-[20px] text-[18px];
     }
 
     .section__card--link {
@@ -71,7 +71,7 @@
     }
 
     .section__card--icon {
-        @apply relative px-0 pb-8 shadow-lg rounded-lg w-full max-w-[312px] h-[400px] mx-auto mx-auto md:w-[340px] md:max-w-none;
+        @apply relative px-0 pb-8 shadow-lg rounded-lg w-full max-w-[312px] h-[400px] mx-auto md:w-[340px] md:max-w-none;
     }
 
     .vertical-card {
