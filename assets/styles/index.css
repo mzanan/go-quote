@@ -27,19 +27,11 @@
     }
     
     .subtitle {
-        @apply text-[24px] leading-[32px] font-bold text-center whitespace-nowrap;
+        @apply text-[24px] leading-[32px] font-bold text-center;
     }
 
     .section__card {
         @apply flex flex-col justify-center items-center gap-5 text-center shadow-lg rounded-3xl w-[300px] mb-10;
-    }
-
-    .section__details {
-        @apply flex flex-col mr-auto text-left gap-2 px-6 pt-8 text-[18px];
-    }
-
-    .section__list {
-        @apply flex flex-col gap-3 list-disc px-6;
     }
 
     .section__card--content {
@@ -54,10 +46,6 @@
         @apply flex items-center justify-center bg-primary rounded-full text-white w-16 h-16;
     }
 
-    .section__card--number {
-        @apply font-bold text-white;
-    }
-
     .section__card--title {
         @apply text-2xl font-black text-primary h-14;
     }
@@ -66,16 +54,8 @@
         @apply h-48 text-left text-smokeBlack lg:text-[20px] text-[18px];
     }
 
-    .section__card--link {
-        @apply text-2xl font-medium text-primary underline decoration-solid pb-12;
-    }
-
-    .section__card--icon {
-        @apply relative px-0 pb-8 shadow-lg rounded-lg w-full max-w-[312px] h-[400px] mx-auto md:w-[340px] md:max-w-none;
-    }
-
-    .vertical-card {
-        @apply w-[148px] h-[148px] drop-shadow-md flex flex-col items-center bg-white rounded-lg py-5 gap-4;
+    .link {
+        @apply text-2xl font-medium text-primary underline decoration-solid;
     }
 
     .testimonial__quote {
@@ -85,15 +65,10 @@
     .review__card {
         @apply text-[20px] w-[234px] text-surface border-l-4 pl-6 border-secondary h-min mb-12;
     }
-
-    .footer__text {
-        @apply text-[20px] leading-6;
-    }
 }
 
 #navbar-btn-open {
     @apply hidden;
-
 }
 
 .navbar--open #navbar-menu {
