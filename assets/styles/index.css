@@ -23,7 +23,7 @@
     }
 
     .title {
-        @apply font-black text-4xl md:text-5xl;
+        @apply font-black text-4xl md:text-[42px] md:leading-[49px];
     }
     
     .subtitle {
