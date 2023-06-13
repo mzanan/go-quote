@@ -83,19 +83,19 @@
                 </div>
             </nav>                   
         </header>
-        <main class="container max-w-[1184px] mx-auto flex flex-col gap-12 mt-3">
-            <section class="section md:flex-row md:justify-between md:items-center lg:mt-16">
+        <main class="container max-w-[1184px] flex flex-col lg:gap-12 pt-3">
+            <section class="section md:flex-row md:justify-between md:items-center lg:mt-16 sm:mx-0 md:max-lg:mx-auto">
                 <div class="flex flex-col">
-                    <p class="title w-[312px] mb-20">
+                    <p class="title max-md:text-4xl max-w-[312px] md:max-w-[400px] mb-10">
                         <span class="text-primary">Get your </span>
                         <span class="text-secondary">no obligation </span>
                         <span class="text-primary">quote today!</span>
                     </p>
                     
-                    <img src="./assets/images/no-obligation-quote.svg" alt="quote" class="md:hidden">
+                    <img src="./assets/images/no-obligation-quote.svg" alt="quote" class="lg:hidden">
                     
-                    <form class="flex flex-col gap-1">
-                        <p class="subtitle text-primary mb-4">Enter your ZIP code</p>
+                    <form class="flex flex-col gap-1 mt-10">
+                        <p class="subtitle text-primary mb-5">Enter your ZIP code</p>
                         <label for="zip-code">
                             <input name="zip-code" placeholder="ZIP CODE" class="bg-transparent border border-primary rounded-md w-full p-2.5" />
                         </label>
@@ -110,14 +110,15 @@
                         </div>
                     </form>
                 </div>
-                    <img src="./assets/images/no-obligation-quote.svg" alt="quote" class="max-md:hidden">
+
+                    <img src="./assets/images/no-obligation-quote.svg" alt="quote" class="max-lg:hidden">
             </section>
 
             
-            <section class="section mb-10">
-                <div class="flex flex-col md:flex-row items-center justify-between mt-5">
+            <section class="section pb-10 max-lg:pt-3">
+                <div class="flex flex-col lg:flex-row items-center lg:justify-between pt-4">
                     <div class="section__card">
-                        <span class="section__card--header"></span>
+                        <div class="section__card--header"></div>
 
                         <div class="section__card--content">
                             <div class="section__card--circle">
@@ -146,7 +147,7 @@
 
                     <div class="section__card">
                         <div class="section__card--header"></div>
-                        
+
                         <div class="section__card--content">
                             <div class="section__card--circle">
                                 <span class="title font-bold text-white">3</span>
@@ -156,19 +157,19 @@
                             <p class="section__card--description">Is a trusted online source of health, life, auto and Medicare insurance for individuals, families and small business.</p>
                             <a href="#" class="link font-semibold pb-12">Read More</a>
                         </div>
-
                     </div>
                 </div>
 
-                <div class="relative">
-                    <svg class="absolute md:right-9 right-12 md:top-0 top-8 md:w-16 w-9" viewBox="0 0 67 114" xmlns="http://www.w3.org/2000/svg">
+                <div class="relative max-md:pr-2">
+                    <svg class="absolute right-4 md:right-10 lg:right-12 mb-20 top-4 md:top-0 md:w-16 w-9" viewBox="0 0 67 114" xmlns="http://www.w3.org/2000/svg">
                         <path class="fill-primary" d="M65.9506 32.674C70.2753 71.5957 49.7333 91.0565 21.6232 113.761C72.4365 13.2132 4.32358 100.787 1.6075e-08 32.674C1.6075e-08 14.7608 14.5215 0.239258 32.4347 0.239258C50.3479 0.239258 65.9506 14.7608 65.9506 32.674Z"/>
                     </svg>
-                    <svg class="absolute md:right-0 right-8 md:top-0 top-8 md:w-16 w-9" viewBox="0 0 67 114" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="absolute right-0 md:right-4 md:top-0 top-4 md:w-16 w-9" viewBox="0 0 67 114" xmlns="http://www.w3.org/2000/svg">
                         <path class="fill-secondary" d="M65.9506 32.674C70.2753 71.5957 49.7333 91.0565 21.6232 113.761C72.4365 13.2132 4.32358 100.787 1.6075e-08 32.674C1.6075e-08 14.7608 14.5215 0.239258 32.4347 0.239258C50.3479 0.239258 65.9506 14.7608 65.9506 32.674Z"/>
                     </svg>
-                                        
-                    <div class="border-[1px] border-primary rounded-xl md:px-10 md:py-6 p-2 pr-8 mt-8 mx-10">
+                </div>
+                <div>
+                    <div class="border-[1px] border-primary rounded-xl md:px-10 md:py-6 p-2 pr-8 mr-4 md:mx-10">
                         <p class="testimonial__quote italic">My friend referred me to QuoteBlock and I could not be happier with the service I have received. Their customer service is outstanding. My agent Edward was extremely friendly and he was able to match me with the Health plan that best fit my needs.</p>
                     </div>
 
@@ -185,8 +186,8 @@
         <main class="w-full bg-primary mx-auto flex flex-col gap-12">
             <section class="section items-center mt-4 md:py-16 pt-16">
                 <div class="flex flex-col max-w-[1184px] w-full max-lg:items-center">
-                    <div class="md:max-w-[500px] max-w-[300px]">
-                        <p class="title">
+                    <div class="max-w-[320px] md:max-w-[400px]">
+                        <p class="title mb-10">
                             <span class="text-surface">Review Plans.</span>
                             <span class="text-secondary">Find the right plan </span>
                             <span class="text-surface">that fits your needs.</span>
@@ -211,18 +212,19 @@
 
         <main class="container max-w-[1184px] mx-auto flex flex-col gap-12">
             <section class="section lg:flex-row lg:justify-between">
-                <div class="flex flex-col m-20 max-lg:items-center">
-                    <img src="./assets/images/plan-review.svg" alt="plan-review" class="max-lg:block lg:hidden max-lg:mb-20">
-                    <div class="max-w-[400px]">
-                        <p class="title">
+                <div class="flex flex-col md:m-20 max-lg:items-center">
+                    <img src="./assets/images/plan-review.svg" alt="plan-review" class="max-lg:block lg:hidden mb-14 px-5">
+
+                    <div class="section max-lg:px-0 md:mx:auto md:w-[400px]">
+                        <p class="title lg:mb-10 max-w-[350px] md:max-w-none">
                             <span class="text-secondary">QuoteBlock</span>
-                            <span class="text-primary ml-[-10px]">.com gives you free no obligation fast plan review.</span>
+                            <span class="text-primary ml-[-8px]">.com gives you free no obligation fast plan review.</span>
                         </p>
 
-                        <p class="mt-8 mb-6 text-smokeBlack text-xl">
+                        <p class="md:mt-4 lg:mt-8 lg:mb-6 text-smokeBlack text-xl">
                             Get a free no obligation, fast plan reviews and compare the prices from the trusted insurance insurance companies within minutes.
                         </p>
-                        <p class="mb-8 text-smokeBlack text-xl">
+                        <p class="lg:mb-8 text-smokeBlack text-xl">
                             We can help you find the most affordable insurance rate for you and your family from the trusted local and national insurance companies in your area.
                         </p>
                     </div>
@@ -249,15 +251,15 @@
         </main>
 
         <footer class="flex flex-col items-center bg-primary text-surface mt-20">
-            <div class="flex flex-col max-lg:items-center max-w-[1184px] w-full mt-5 px-14 py-6 mx-20">
-                <div class="flex justify-between lg:flex-row lg:items-start max-lg:flex-col">
+            <div class="flex flex-col max-lg:items-center max-w-[1184px] md:w-full md:px-14 pt-10 pb-6">
+                <div class="flex lg:justify-between lg:flex-row items-center lg:items-start max-lg:flex-col">
                     <section class="section gap-4 lg:mb-14">
-                        <div class="flex flex-col gap-1">
-                            <span class="text-[20px] leading-6 font-normal">Call to speak with a licensed insurance agent</span>
-                            <span class="text-[20px] leading-6 font-semibold">M-F 9am to 7pm EST</span>
+                        <div class="flex flex-col gap-1">                            
+                            <span class="text-[20px] leading-6 font-normal max-md:w-[252px]">Call to speak with a licensed insurance agent</span>
+                            <span class="text-[20px] leading-6 font-semibold md:max-lg:text-center">M-F 9am to 7pm EST</span>
                     </section>
 
-                    <section class="lg:section max-lg:px-6 max-lg:mb-10 flex-row gap-4 ">
+                    <section class="lg:section max-lg:px-6 max-lg:pb-16 flex-row gap-4 ">
                         <div class="flex items-center gap-1">
                             <img src="./assets/images/telephone.svg" alt="telephone">
                             <a href="#" class="text-[20px] leading-6 font-semibold">1-833-888-0586 TTY 711</a>
@@ -265,7 +267,7 @@
                     </section>
                 </div>
 
-                <div class="flex justify-between lg:flex-row lg:items-start max-lg:flex-col mb-4">
+                <div class="flex justify-between lg:flex-row lg:items-start max-lg:flex-col mb-6">
                     <section class="section flex-row gap-2 max-lg:py-4 mt-1">
                         <img src="./assets/images/help-center.svg" alt="help-center">
                         <a href="#" class="text-[20px] leading-6 underline decoration-solid font-semibold">Help Center</a>
@@ -283,8 +285,8 @@
                 </div>
             </div>
 
-            <div class="max-w-[1184px] w-full">
-                <section class="section text-2xl mb-14">
+            <div class="max-w-[1184px] ">
+                <section class="section w-full text-lg lg:text-2xl pb-14">
                     <p class="max-lg:hidden block">
                         QuoteBlock Insurance Services is a division of QuoteBlock, DBA: QuoteBlock.com. ©2023 QuoteBlock Insurance Services. All rights reserved. We do not offer every plan available in your area. Any information we provide is limited to those plans we do offer in your area. Please contact Medicare.gov or 1-800-MEDICARE to get information on all of your options. QuoteBlock represents Medicare Advantage [HMO, PPO, or PFFS] organizations and/or Medicare-approved Part D sponsors that have a Medicare contract. Enrollment depends on the plan’s contract renewal. QuoteBlock takes no responsibility and assumes no liability for any content posted by consumers or any third party. By completing the contact form above or calling the number listed above, you will be directed to a licensed sales agent who can answer your questions and provide information about Medicare Advantage, Prescription Drug (Part D) and Medicare Supplement insurance plans. Neither QuoteBlock Insurance Services nor its agents are connected with or endorsed by the U.S. government or the federal Medicare program. Availability of insurance companies and products are dependent on your resident zip code. Not all plans offer all of these benefits. Benefits may vary by carrier and location. Limitations and exclusions may apply. **Information related to DOB and gender is not needed for Medicare Advantage and Part D plans. *The Medicare Advantage and Prescription Drug Plan Annual Enrollment Period (AEP) runs from October 15-December 7. During this time, Medicare recipients can evaluate their current coverage and enroll in new plans for the upcoming year. 
                         Enrollment in a plan may be limited to certain times of the year unless you qualify for a special election period or you are in your Medicare Initial Election Period.
@@ -299,7 +301,7 @@
                 </section>
                     
                 <section class="section">
-                    <div class="flex items-center flex-col gap-1 text-2xl leading-6 ">
+                    <div class="flex items-center flex-col gap-1 text-xl md:text-2xl leading-6 ">
                         <p class="font-bold">
                             <span>© 2023</span>
                             <span class="text-secondary">QuoteBlock.com</span>
@@ -307,8 +309,8 @@
 
                         <span class="font-semibold">All Right Reserved</span>
                     </div>
-                    <div class="flex gap-4 fill-surface mt-8 mb-10">
-                        <span class="text-lg">
+                    <div class="flex gap-4 fill-surface py-10">
+                        <span class="text-lg lg:text-2xl">
                             The content of the website is provided for informational purposes only. No content of the website is intended to constitute or be a substitute for professional advice. In addition, this web site may contain links to third-party web sites provided as a courtesy. They are not intended to nor do they constitute an endorsement of the linked materials. When clicking on such links, please note that you are exiting this site and navigating to another. QuoteBlock.com is not responsible for the content of such websites. Email support@quoteblock.com can be used to revoke consent. Can be revoked through any reasonable means.
                         </span>
                     </div>
