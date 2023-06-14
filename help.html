@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./dist/styles/index.css" rel="stylesheet">
+        <link href="./dist/libs/splidejs/css/splide.min.css" rel="stylesheet">
+        <script src="./dist/libs/splidejs/js/splide.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav id="navbar" class="w-full lg:bg-surface shadow-sm">
+                <div class="flex flex-col lg:flex-row lg:container lg:mx-auto lg:max-w-[1184px]">
+                    <div class="flex items-center h-[4.5rem] px-6 drop-shadow-sm bg-surface justify-between lg:drop-shadow-none">
+                        <div class="flex items-center bg-gray-400">
+                            <a href="./index.html">
+                                <svg width="83" height="41" viewBox="0 0 80 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="flex lg:hidden">
+                            <button type="button" id="navbar-btn" class="text-body focus:outline-none">
+                                <svg class="h-8 w-8 fill-current" viewBox="0 0 24 24">
+                                    <path id='navbar-btn-close' fill-rule="evenodd" clip-rule="evenodd" d="M3 7h18v2H3V7zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
+                                    <path id='navbar-btn-open' d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="navbar-menu" class="transition-all duration-700 h-0 bg-surface overflow-hidden lg:h-[4.5rem] lg:flex-1 lg:bg-surface lg:transition-none">
+                    <ul class="flex flex-col justify-center gap-6 p-6 pr-4 pt-12 lg:flex-row lg:py-0 lg:justify-end lg:h-full lg:items-center lg:gap-8">
+                        <li>
+                            <a href="./index.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                               Health Insurance
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./medicare-plans.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                Medicare Plans
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./about-us.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                About us
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./contact-us.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                Contact Us
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./privacy-policy.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                Privacy Policy
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./terms-of-service.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                Terms of Services
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    </div>   
+                </div>
+            </nav>                   
+        </header>
+
+        <main class="container max-w-[1184px] flex flex-col md:items-center md:mx-auto pb-20 md:px-6 lg:px-10">
+            <section class="section lg:gap-0 pt-8 pb-0 lg:pt-16 lg:px-10 lg:flex-row md:justify-between lg:w-full">
+                <div class="flex flex-col lg:m-0 max-lg:items-center">
+                    <h2 class="title text-primary max-md:w-[312px] pb-10">
+                        Health Insurance Help Section
+                    </h2>
+                    <img src="./assets/images/help.svg" alt="health insurance" class="lg:hidden">
+                    
+                </div>
+                <img src="./assets/images/help.svg" alt="health insurance" class="max-lg:hidden pr-10">
+            </section>
+
+            <section class="lg:flex-row pt-10">
+                <div class="section py-0 gap-0 flex flex-col items-start">
+                    <p class="text-[24px] leading-[28px] md:text-[32px] md:leading-[37px] font-black text-primary pb-6">
+                        Why you need Health Insurance?
+                    </p>
+                    <div class="text-smokeBlack text-lg md:text-xl font-normal">
+                        <p class="pb-6">
+                            The first step to making a smart health insurance decision is to understand the value of health insurance and why you need it. It may sound obvious, but many people don't properly understand the basic purpose of health insurance or how it works. In brief, health insurance helps protect you in the following ways:
+                        </p>
+                        <ul class="list-disc pl-6 text-smokeBlack">
+                            <li class="pb-6">
+                                Health insurance protects your finances. It entitles you to discounted rates - Insurance companies negotiate rates with health care providers. Without coverage, the fee charged for a regular office visit can be twice as high.
+                            </li>
+                            <li class="pb-6">
+                                It shields you from unexpected medical costs. Even if your health plan requires you to pay certain costs out of pocket, being covered can help save you from bankruptcy in case of injury or hospitalization.
+                            </li>
+                            <li class="pb-6">
+                                Health insurance protects your health. It improves your access to quality care. As a member of a health insurance plan, you have access to a broad network of health care providers.
+                            </li>
+                            <li class="pb-6">
+                                It provides you critical care. While uninsured patients will often get emergency-room care and be billed afterwards, they may not get important treatment for a life-threatening chronic condition without an upfront payment.
+                            </li>
+                            <li>
+                                It encourages a healthier lifestyle.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="px-6 py-14 gap-0">
+                    <p class="text-[22px] leading-[26px] md:text-[32px] md:leading-[37px] font-black text-primary py-14">
+                        You may be more likely to take advantage of regular checkups and preventive care if you know it won't cost you an arm and a leg.
+                    </p>
+                </div>
+            </section>
+
+            <section class="section py-0 lg:flex-row">
+                <div class="flex flex-col items-start">
+                    <p class="text-[24px] leading-[28px] md:text-[32px] md:leading-[37px] font-black text-primary pb-8">
+                       Top four health plan types
+                    </p>
+                    <ol class="list-decimal pl-6 text-smokeBlack text-lg md:text-xl">
+                        <li class="pb-6">
+                            PPO. PPO or "Preferred Provider Organization" plans are the most popular in the Individual and Family market. Like the name implies, with a PPO you'll need to get your medical care from doctors or hospitals on the insurance company's list of preferred providers if you want your claims paid at the highest level. It's up to you to make sure that the health care providers you visit participate in the PPO. Services rendered by out-of-network providers may not be covered or may be paid at a lower level. A PPO plan may be right for you if: Your favorite doctor already participates in the PPO: you can sort for plans accepted by your doctor after getting quotes a QuoteBlock.com. You want some freedom to direct your own health care but don't mind working within a list of preferred providers.
+                        </li>
+                        <li class="pb-6">
+                            HMO. HMO means "Health Maintenance Organization." HMO plans offer a wide range of health care services through a network of providers that contract exclusively with the HMO, or who agree to provide services to members. As a member of an HMO, you will need to choose a primary care physician ("PCP") who will provide most of your health care and refer you to HMO specialists as needed. Health care services obtained outside of the HMO are typically not covered, though there may be exceptions in case of an emergency. An HMO plan may be right for you if: You're willing to play by the rules and coordinate your care through a primary care physician. You value preventive care services: coverage for checkups, immunizations and similar services are often emphasized by HMOs.
+                        </li>
+                        <li class="pb-6">
+                            HSA-eligible Plans. These are usually PPO plans with higher deductibles, designed specially for use with Health Savings Accounts ("HSAs"). Similar to a 401(k), an HSA is a special bank account that allows you to save money - pre-tax - to be used specifically for medical expenses in the future. Unlike a flexible spending account, the money in your HSA rolls over every year and can also gain interest. By pairing a qualifying high-deductible health plan with an HSA, you can save money on health care and earn a tax write-off.
+                        </li>
+                        <li>
+                            Indemnity. Indemnity plans allow you to direct your own health care and visit most any doctor or hospital you like. The insurance company then pays a set portion of your total charges. You may be required to pay for some services up front and then apply to the insurance company for reimbursement. Because of the freedom they allow members, Indemnity plans are sometimes more expensive than other types of plans. An Indemnity plan may be right for you if: You want the greatest level of freedom possible in choosing which doctors or hospitals to visit. You don't mind coordinating the billing and reimbursement of your claims yourself.
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+            <section class="section pb-0 lg:flex-row pt-12">
+                <div class="flex flex-col items-start">
+                    <p class="text-[24px] leading-[28px] md:text-[32px] md:leading-[37px] font-black text-primary pb-6">
+                        Four Health Insurance Terms you must know
+                    </p>
+                    <ol class="list-decimal pl-6 text-smokeBlack text-lg md:text-xl">
+                        <li class="pb-6">
+                            Premium: Your premium is the amount you pay to the health insurance company each month to maintain your coverage. When trying to understand the cost of a health insurance plan, the premium is the first thing to consider. But make sure to balance it against other costs, such as copayments, deductibles and coinsurance. A good rule: choose a lower premium/higher deductible if you want to save money now, and a higher premium/lower deductible if you want to be more financially prepared for unexpected medical expenses later.
+                        </li>
+                        <li class="pb-6">
+                            Copayment: Your copayment, or "copay," is the specific dollar amount you may be required to pay up front for a specific type of service. For example, your health insurance plan may require a $15 co-payment for an office visit or brand-name prescription drug, after which the insurance company pays the remainder of the charges. A good rule: if you make frequent doctor's office visits, make sure you choose an affordable and consistent copayment.
+                        </li>
+                        <li class="pb-6">
+                            Deductible: Your annual deductible is the amount you may be required to pay out-of-pocket before the insurance company will begin paying for your medical claims. Keep in mind, your monthly premiums and copayments will often not count toward your deductible. Not all plans require a deductible, but choosing a plan with a higher deductible can keep your monthly premiums lower. A good rule: keep your deductible to no more than 5% of your gross annual income.
+                        </li>
+                        <li>
+                            Coinsurance: Coinsurance is the amount that you are obliged to pay for covered medical services after you've satisfied any co-payment or deductible required by your health insurance plan. Think about it this way: the insurance company may limit coverage for certain services to, say, 80% of charges. So, for example, if your insurance benefits cover 80% of x-ray charges, you will need to pay the remaining 20%, even if your annual deductible is already met. That 20% is considered coinsurance. 5. Maximum Out-of-pocket Costs: Pay attention to this amount when considering a new health plan. Your maximum out-of-pocket cost sets a limit to your annual financial liability. Once you have paid out of pocket (typically through deductibles, copayments or coinsurance) to the "maximum" amount, the insurance company pays the full charges for any additional covered medical services rendered that year. Your monthly premium will not count toward your maximum out-of-pocket costs.
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+            <section class="section pt-12 pb-0 lg:flex-row ">
+                <div class="flex flex-col items-start">
+                    <ul class="pl-2 text-smokeBlack text-lg md:text-xl">
+                        <li class=" pb-6">
+                            • Healthcare Reform After March 2014 it will become illegal to deny health insurance to a child based on a pre-existing condition, and children will now be allowed to stay on their parent's insurance until the age of 26. Seniors will also see a few benefits now. Starting 2013 the Medicare prescription drug "donut hole" will be closed somewhat, since seniors will receive a $250 rebate to compensate for some of the medications they can't afford.
+                        </li>
+                        <li class="pb-6">
+                            Next year seniors in the gap will receive a 50% discount on name brand drugs. However, there will also be significant cuts to Medicare over the next decade, something that Democrats suggest will be offset by cutting out much of the Medicare fraud that drains the health care giant of billions a year. In the year 2012 a Medicare payroll tax on investment income will be levied against families making more than $250,000 per year. This is to pay, in part, for the major parts of the bill that take effect in 2014. By 2014, the following laws will take effect: All Americans will be required to purchase some form of health insurance. Otherwise a fee will be levied against them, excluding low-income individuals. Non-profit health insurance exchanges will be established to help those who can't afford current health insurance premiums.
+                        </li>
+                        <li class="pb-6">
+                            There will be separate exchanges designed specifically for small businesses. Subsidies will be available to individuals and families who still can't afford some form of health insurance. Medicaid will expand to include childless adults. Employers with more than 50 employees must provide health insurance to workers or pay a fine. In 2018 the most controversial aspect of the bill is scheduled to begin.
+                            Health insurance companies will be expected to pay a tax on high-end "Cadillac" insurance plans worth over $27,500 for families and $10,200 for individuals. This does not include dental and/or vision. There are no benefits included for illegal immigrants.
+                        </li>
+                        <li>
+                            • Recently Unemployed Unemployment causes obvious disruptions in one's personal affairs. While continuation of health insurance benefits is understandably not top-of-mind during transition periods, there are important considerations for people who have found themselves unemployed and without health insurance coverage.
+                            There are risks to being without health insurance, both near-term in protecting against major medical expenses, but also longer-term in your ability to enter into a more permanent health insurance plan. If you have historically received group health insurance benefits through your employers, you probably have not put much thought into your health insurance option.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section pb-0 lg:flex-row pt-12">
+                <div class="flex flex-col items-start">
+                    <p class="text-[24px] leading-[28px] md:text-[32px] md:leading-[37px] font-black text-primary pb-6">
+                        There are options for unemployed works to either:
+                    </p>
+                    <ol class="list-decimal pl-6 text-smokeBlack text-lg md:text-xl">
+                        <li class="pb-6">
+                            Continue health coverage from the previous employer - albeit at one's own expense.
+                        </li>
+                        <li class="pb-6">
+                            Entering into a private-market individual health plan that ensures longer-term coverage and portability. COBRA Options There is a federal statute called COBRA that does guarantee your employee-based health insurance has a certain degree of portability. Under COBRA, by federal law you must be entitled to continue that health insurance coverage and pay for it on your own.
+                        </li>
+                    </ol>
+
+                    <ul class="pl-2 text-smokeBlack text-lg md:text-xl">
+                        <li class="pb-6">
+                            There are some restrictions on COBRA eligibility based on length of coverage and whether the dismissal from your full-time position meets certain criteria. For exact rules, please consult with the HR coordinator of your previous employer. The limitations to you as a health insurance consumer is that while the law says that the company must continue to offer you the same level of coverage you had as an employee, there are no stipulations that preserve for you the same group rate offered to your former employer.
+                            Once the employer's contribution is removed, newly-unemployed people may face “sticker shock” when they see what the cost is to continue their health insurance benefits through COBRA. However, the strongest case for continuing under COBRA is that it provides continuity in a period when many of your other affairs are in transition.
+                        </li>
+                        <li>
+                            Other Health Insurance Options Aside from finding a new employer providing health insurance benefits, there are more options available to you beyond COBRA, with the main options being:
+                        </li>
+                        <li>
+                            1) Coverage under a Family Plan
+                        </li>
+                        <li>
+                            2) Short-Term Health Insurance and
+                        </li>
+                        <li>
+                            3) Private-Market Health Insurance
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section pb-0 lg:flex-row pt-12">
+                <div class="flex flex-col items-start">
+                    <ul class="pl-2 text-smokeBlack text-lg md:text-xl">
+                        <li class="text-primary font-bold">
+                            • Family Plan:
+                        </li>
+                        <li class="pb-6">
+                            Coverage under a Family Plan If you are married and your spouse has health insurance either through work or as a private health insurance policy, your first and best option is to see if you can be placed upon his or her health plan.
+                            The first consideration is whether you are eligible for coverage under a spouse's health insurance plan. This is usually the most economical option with the greatest ease of entry. However, there are still limitations that may still apply. For example, if the family member’s health plan is through an employer, the adding of new family members may be limited to only once a year during the group plan open enrollment period. You would need to consult with the benefits manager of the spouse’s plan to understand the full details of enrollment.
+                        </li>
+                        <li class="text-primary font-bold">
+                            • Short-Term Health Insurance:
+                        </li>
+                        <li class="pb-6">
+                            If you cannot find coverage under your spouse's healthcare insurance plan, and you feel you will only be unemployed for a brief period of time before you find another job that offers medical benefits, you may consider a short-term insurance. Short-term health insurance is specifically designed to provide basic level, limited-term coverage to people who are in transition.
+                            Short-term health insurance plans provide basic level coverage with generally more affordable premiums than under a COBRA plan or a new individual/family health plan. Short-term plans involve a fixed period of time, usually 6 month to one year. The advantage of a short-term plan is that they are typically easy-to-understand, easy-to-enroll and affordable relative traditional health insurance premiums. However, the downside is that short-term insurance plans don't cover the same variety of visits, tests, or procedures as would a COBRA or individual/family plan, and they have a set expiration date.
+                        </li>
+                        <li class="text-primary font-bold">
+                            • Private Market Health Insurance:
+                        </li>
+                        <li class="pb-6">
+                            While not a “short-term” solution, job-seekers may also consider enrolling in a more permanent Individual/Family plan. A growing number of Americans are opting for private-market Individual/Family plans to avoid having their health insurance benefits tied to their current or future employment. Whatever health insurance you qualify for or choose to purchase, it is important that you have made arrangements to obtain some level of private health insurance before your COBRA benefit runs out or if you choose not to enter under a COBRA plan.
+                        </li>
+                        <li class="text-primary font-bold">
+                            • Avoiding Lapses in Coverage
+                        </li>
+                        <li class="pb-6">
+                            If you are in between jobs and previously had employer-based health insurance, it is critical that you avoid a prolonged lapse in medical coverage. Health insurance companies try to control costs by invoking "pre-existing condition" clauses, refusing to cover treatments for a medical condition they say you had before you purchased the health insurance policy.
+                            The Health Insurance Portability and Accountability Act, HIPAA, protects you from having conditions that were covered by your current health insurance plan being ruled “pre-existing” when you move from one job, and therefore one health insurance plan to another. However, the HIPAA protections only apply if there has not been a significant lapse in coverage. Under the law, you only have about two months for protection under HIPAA before a future health insurer can turn you down for a new policy based on a pre-existing condition. Under the federal HIPAA regulations if you have had health insurance for more than 18 months an insurance company cannot place a waiting period on pre-existing medical conditions if you haven’t been without medical coverage for over 63 days. While you can maintain your health insurance under the COBRA provisions, COBRA is generally an expensive option.
+                        </li>
+                        <li class="pb-6">
+                            Most high-deductible health insurance plans, which have lower relative monthly premium costs, will meet the HIPAA requirements for “continuous coverage”. Some short-term health insurance policies may also keep you HIPAA eligible, but it is the exception rather than the rule for short-term plans because of their limited scope of coverage. It is best to check with a qualified health insurance professional before you assume that a short-term health insurance policy qualifies as “continuous coverage” under HIPAA.
+                        </li> 
+                        <li class="pb-6">
+                            Finally, keep in mind that HIPAA was designed to make the transition from health insurance plans from your new employer easier when switching jobs easier, and to avoid new waiting periods for pre-existing condition exclusions. The law does not guarantee that you will receive the same level of benefits, claim limits, etc. that you had with your previous health insurance plan.
+                        </li>   
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer class="flex flex-col items-center bg-primary text-surface">
+            <div class="flex flex-col max-lg:items-center max-w-[1184px] md:w-full md:px-14 pt-10 pb-6">
+                <div class="flex lg:justify-between lg:flex-row items-center lg:items-start max-lg:flex-col">
+                    <section class="section gap-4 lg:mb-14">
+                        <div class="flex flex-col gap-1">                            
+                            <span class="text-[20px] leading-6 font-normal max-md:w-[252px]">Call to speak with a licensed insurance agent</span>
+                            <span class="text-[20px] leading-6 font-semibold md:max-lg:text-center">M-F 9am to 7pm EST</span>
+                    </section>
+
+                    <section class="lg:section max-lg:px-6 max-lg:pb-16 flex-row gap-4 ">
+                        <div class="flex items-center gap-1">
+                            <img src="./assets/images/telephone.svg" alt="telephone">
+                            <a href="#" class="text-[20px] leading-6 font-semibold">1-833-888-0586 TTY 711</a>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="flex justify-between lg:flex-row lg:items-start max-lg:flex-col mb-6">
+                    <section class="section flex-row gap-2 max-lg:py-4 mt-1">
+                        <img src="./assets/images/help-center.svg" alt="help-center">
+                        <a href="./help.html" class="text-[20px] leading-6 underline decoration-solid font-semibold">Help Center</a>
+                    </section>
+                    
+                    <section class="section flex-row gap-2 max-lg:py-4">
+                        <img src="./assets/images/terms-of-use.svg" alt="terms-of-use">
+                        <a href="./terms-of-service.html" class="text-[20px] leading-6 underline decoration-solid font-semibold">Terms of Services</a>
+                    </section>
+                    
+                    <section class="section flex-row gap-2 max-lg:py-4">
+                        <img src="./assets/images/privacy-policy.svg" alt="privacy-policy">
+                        <a href="./privacy-policy.html" class="text-[20px] leading-6 underline decoration-solid font-semibold">Privacy Policy</a>
+                    </section>
+                </div>
+            </div>
+
+            <div class="max-w-[1184px] ">
+                <section class="section w-full text-lg pb-14">
+                    <p class="max-lg:hidden block">
+                        QuoteBlock Insurance Services is a division of QuoteBlock, DBA: QuoteBlock.com. ©2023 QuoteBlock Insurance Services. All rights reserved. We do not offer every plan available in your area. Any information we provide is limited to those plans we do offer in your area. Please contact Medicare.gov or 1-800-MEDICARE to get information on all of your options. QuoteBlock represents Medicare Advantage [HMO, PPO, or PFFS] organizations and/or Medicare-approved Part D sponsors that have a Medicare contract. Enrollment depends on the plan’s contract renewal. QuoteBlock takes no responsibility and assumes no liability for any content posted by consumers or any third party. By completing the contact form above or calling the number listed above, you will be directed to a licensed sales agent who can answer your questions and provide information about Medicare Advantage, Prescription Drug (Part D) and Medicare Supplement insurance plans. Neither QuoteBlock Insurance Services nor its agents are connected with or endorsed by the U.S. government or the federal Medicare program. Availability of insurance companies and products are dependent on your resident zip code. Not all plans offer all of these benefits. Benefits may vary by carrier and location. Limitations and exclusions may apply. **Information related to DOB and gender is not needed for Medicare Advantage and Part D plans. *The Medicare Advantage and Prescription Drug Plan Annual Enrollment Period (AEP) runs from October 15-December 7. During this time, Medicare recipients can evaluate their current coverage and enroll in new plans for the upcoming year. 
+                        Enrollment in a plan may be limited to certain times of the year unless you qualify for a special election period or you are in your Medicare Initial Election Period.
+                    </p>
+
+                    <p class="block lg:hidden">
+                        QuoteBlock Insurance Services is a division of QuoteBlock, DBA: QuoteBlock.com. ©2023 QuoteBlock Insurance Services. All rights reserved. We do not offer every plan available in your area. Any information we provide is limited to those plans we do offer in your area. Please contact Medicare.gov or 1-800-MEDICARE to get information on all of your options. QuoteBlock represents Medicare Advantage [HMO, PPO, or PFFS] organizations and/or Medicare-approved Part D sponsors that have a Medicare contract. Enrollment depends on the plan’s contract renewal. QuoteBlock takes no responsibility and assumes no liability for any content posted by consumers or any third party.
+                        <a href="#" class="link font-bold text-surface lg:hidden inline">
+                            Read More
+                        </a>
+                    </p>
+                </section>
+                    
+                <section class="section">
+                    <div class="flex items-center flex-col gap-1 text-lg md:text-xl">
+                        <p class="font-bold">
+                            <span>© 2023</span>
+                            <span class="text-secondary">QuoteBlock.com</span>
+                        </p>
+
+                        <span class="font-semibold">All Right Reserved</span>
+                    </div>
+                    <div class="flex gap-4 fill-surface py-10">
+                        <span class="text-lg">
+                            The content of the website is provided for informational purposes only. No content of the website is intended to constitute or be a substitute for professional advice. In addition, this web site may contain links to third-party web sites provided as a courtesy. They are not intended to nor do they constitute an endorsement of the linked materials. When clicking on such links, please note that you are exiting this site and navigating to another. QuoteBlock.com is not responsible for the content of such websites. Email support@quoteblock.com can be used to revoke consent. Can be revoked through any reasonable means.
+                        </span>
+                    </div>
+                </section>
+            </div>
+        </footer>
+
+        <script src="./assets/index.js"></script>
+        <script type="text/javascript">
+            (() => {
+                Splide.defaults = {
+                    arrows: false,
+                    drag: true,
+                    autoplay: true
+                }
+                new Splide( '.splide' ).mount();
+            })()
+        </script>
+    </body>
+</html>
