@@ -1,0 +1,1196 @@
+<!-- "Complete your health profile" first page "Personal Information" -->
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./dist/styles/index.css" rel="stylesheet">
+        <link href="./dist/libs/splidejs/css/splide.min.css" rel="stylesheet">
+        <script src="./dist/libs/splidejs/js/splide.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav id="navbar" class="w-full lg:bg-surface shadow-sm">
+                <div class="flex flex-col lg:flex-row lg:container lg:mx-auto lg:max-w-[1184px]">
+                    <div class="flex items-center h-[4.5rem] px-6 drop-shadow-sm bg-surface justify-between lg:drop-shadow-none">
+                        <div class="flex items-center bg-gray-400">
+                            <a href="./index.html">
+                                <svg width="83" height="41" viewBox="0 0 80 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="flex lg:hidden">
+                            <button type="button" id="navbar-btn" class="text-body focus:outline-none">
+                                <svg class="h-8 w-8 fill-current" viewBox="0 0 24 24">
+                                    <path id='navbar-btn-close' fill-rule="evenodd" clip-rule="evenodd" d="M3 7h18v2H3V7zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
+                                    <path id='navbar-btn-open' d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="navbar-menu" class="transition-all duration-700 h-0 bg-surface overflow-hidden lg:h-[4.5rem] lg:flex-1 lg:bg-surface lg:transition-none">
+                    <ul class="flex flex-col justify-center gap-6 p-6 pr-4 pt-12 lg:flex-row lg:py-0 lg:justify-end lg:h-full lg:items-center lg:gap-8">
+                        <li>
+                            <a href="./index.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                               Health Insurance
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./medicare-plans.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                Medicare Plans
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./about-us.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                About us
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./contact-us.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                Contact Us
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./privacy-policy.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                Privacy Policy
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./terms-of-service.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                Terms of Services
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    </div>   
+                </div>
+            </nav>                   
+        </header>
+
+        <main class="container max-w-[1184px] flex flex-col lg:gap-12 items-center mx-auto md:mt-5 pb-20">
+            <section class="section gap-4 lg:pr-0 lg:pt-16 lg:w-full lg:px-10 text-primary">
+                <h2 class="title md:text-center max-md:max-w-[320px]">Complete your health profile</h2>
+
+                <p class="text-2xl font-medium text-center">Personal Information</p>
+                <div class="flex items-center justify-center">
+                    <hr class="flex-grow border-t-2 border-secondary mr-2 max-w-[145px] w-full">
+                    <span class="text-secondary text-2xl">1</span>
+                    <hr class="flex-grow border-t-2 border-secondary ml-2 max-w-[145px] w-full">
+                </div>
+            </section>
+
+            <div class="flex flex-col items-center mt-4 w-full">
+                <section class="items-center max-w-[550px] w-full">
+                    <form class="flex flex-col gap-10 px-6">
+                        <div>
+                            <p class="pl-1 pb-1 text-xl text-smokeBlack">First Name *</p>
+                            <input type="text" name="name" placeholder="First Name" class="bg-inputs w-full p-2.5 rounded-[4px]" />
+                        </div>
+                        <div>
+                            <p class="pl-1 pb-1 text-xl text-smokeBlack">Last Name *</p>
+                            <input type="text" name="lastName" placeholder="Last Name" class="bg-inputs w-full p-2.5 rounded-[4px]" />
+                        </div>
+                        <div>
+                            <p class="pl-1 pb-1 text-xl text-smokeBlack">Household Size</p>
+                            <select type="number" name="size" aria-label="household size" class="bg-inputs p-2.5 rounded-[4px] w-full r-2">
+                                <option disabled selected value="">Household Size</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+                        </div>
+                        <div>
+                            <p class="pl-1 pb-1 text-xl text-smokeBlack">Household Income</p>
+                            <select type="number" name="income" aria-label="household income" class="bg-inputs p-2.5 rounded-[4px] w-full mr-2">
+                                <option disabled selected value="">Household Income</option>
+                                <option value="">A</option>
+                                <option value="">B</option>
+                                <option value="">C</option>
+                            </select>
+                        </div>
+                        <div>
+                            <p class="pl-1 pb-1 text-xl text-smokeBlack">D.O.B</p>
+                            <input type="text" name="dob" placeholder="D.O.B" class="bg-inputs w-full p-2.5 rounded-[4px]" />
+                        </div>
+                        <div class="flex justify-between gap-12">
+                            <div class="w-1/2">
+                                <p class="pl-1 pb-1 text-xl text-smokeBlack">Age</p>
+                                <input type="number" name="age" placeholder="Age" class="bg-inputs w-full p-2.5 rounded-[4px]" />
+                            </div>
+                            <div class="w-1/2">
+                                <p class="pl-1 pb-1 text-xl text-smokeBlack">Weight</p>
+                                <select type="number" name="size" aria-label="Weight" class="bg-inputs w-full p-2.5 rounded-[4px]">
+                                    <option disabled selected value="">Weight</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flex justify-between gap-12">
+                            <div class="w-1/2">
+                                <p class="pl-1 pb-1 text-xl text-smokeBlack">Inches</p>
+                                <input type="number" name="inches" placeholder="Inches" class="bg-inputs w-full p-2.5 rounded-[4px]" />
+                            </div>
+                            <div class="w-1/2">
+                                <p class="pl-1 pb-1 text-xl text-smokeBlack">Height</p>
+                                <select type="number" name="size" aria-label="Height" class="bg-inputs p-2.5 rounded-[4px] w-full r-2">
+                                    <option disabled selected value="">Height</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="pl-1 pb-1 text-xl text-smokeBlack">Gender</p>
+                            <select type="number" name="income" aria-label="Gender" class="bg-inputs p-2.5 rounded-[4px] w-full mr-2">
+                                <option disabled selected value="">Gender</option>
+                                <option value="">A</option>
+                                <option value="">B</option>
+                                <option value="">C</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="mx-auto rounded-[4px] py-4 max-w-[312px] w-full bg-accent text-white hover:bg-accent font-semibold transition-all duration-500 hover:bg-transparent hover:ring-1 hover:ring-accent hover:text-accent">
+                            Next
+                        </button>
+                    </form>
+                </section>
+            </div>
+        </main>
+
+        <footer class="flex flex-col items-center bg-primary text-surface">
+            <div class="flex flex-col max-lg:items-center max-w-[1184px] md:w-full md:px-14 pt-10 pb-6">
+                <div class="flex lg:justify-between lg:flex-row items-center lg:items-start max-lg:flex-col">
+                    <section class="section gap-4 lg:mb-14">
+                        <div class="flex flex-col gap-1">                            
+                            <span class="text-[20px] leading-6 font-normal max-md:w-[252px]">Call to speak with a licensed insurance agent</span>
+                            <span class="text-[20px] leading-6 font-semibold md:max-lg:text-center">M-F 9am to 7pm EST</span>
+                    </section>
+
+                    <section class="lg:section max-lg:px-6 max-lg:pb-16 flex-row gap-4 ">
+                        <div class="flex items-center gap-1">
+                            <img src="./assets/images/telephone.svg" alt="telephone">
+                            <a href="#" class="text-[20px] leading-6 font-semibold">1-833-888-0586 TTY 711</a>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="flex justify-between lg:flex-row lg:items-start max-lg:flex-col mb-6">
+                    <section class="section flex-row gap-2 max-lg:py-4 mt-1">
+                        <img src="./assets/images/help-center.svg" alt="help-center">
+                        <a href="#" class="text-[20px] leading-6 underline decoration-solid font-semibold">Help Center</a>
+                    </section>
+                    
+                    <section class="section flex-row gap-2 max-lg:py-4">
+                        <img src="./assets/images/terms-of-use.svg" alt="terms-of-use">
+                        <a href="#" class="text-[20px] leading-6 underline decoration-solid font-semibold">Terms of Services</a>
+                    </section>
+                    
+                    <section class="section flex-row gap-2 max-lg:py-4">
+                        <img src="./assets/images/privacy-policy.svg" alt="privacy-policy">
+                        <a href="#" class="text-[20px] leading-6 underline decoration-solid font-semibold">Privacy Policy</a>
+                    </section>
+                </div>
+            </div>
+
+            <div class="max-w-[1184px] ">
+                <section class="section w-full text-lg pb-14">
+                    <p class="max-lg:hidden block">
+                        QuoteBlock Insurance Services is a division of QuoteBlock, DBA: QuoteBlock.com. ©2023 QuoteBlock Insurance Services. All rights reserved. We do not offer every plan available in your area. Any information we provide is limited to those plans we do offer in your area. Please contact Medicare.gov or 1-800-MEDICARE to get information on all of your options. QuoteBlock represents Medicare Advantage [HMO, PPO, or PFFS] organizations and/or Medicare-approved Part D sponsors that have a Medicare contract. Enrollment depends on the plan’s contract renewal. QuoteBlock takes no responsibility and assumes no liability for any content posted by consumers or any third party. By completing the contact form above or calling the number listed above, you will be directed to a licensed sales agent who can answer your questions and provide information about Medicare Advantage, Prescription Drug (Part D) and Medicare Supplement insurance plans. Neither QuoteBlock Insurance Services nor its agents are connected with or endorsed by the U.S. government or the federal Medicare program. Availability of insurance companies and products are dependent on your resident zip code. Not all plans offer all of these benefits. Benefits may vary by carrier and location. Limitations and exclusions may apply. **Information related to DOB and gender is not needed for Medicare Advantage and Part D plans. *The Medicare Advantage and Prescription Drug Plan Annual Enrollment Period (AEP) runs from October 15-December 7. During this time, Medicare recipients can evaluate their current coverage and enroll in new plans for the upcoming year. 
+                        Enrollment in a plan may be limited to certain times of the year unless you qualify for a special election period or you are in your Medicare Initial Election Period.
+                    </p>
+
+                    <p class="block lg:hidden">
+                        QuoteBlock Insurance Services is a division of QuoteBlock, DBA: QuoteBlock.com. ©2023 QuoteBlock Insurance Services. All rights reserved. We do not offer every plan available in your area. Any information we provide is limited to those plans we do offer in your area. Please contact Medicare.gov or 1-800-MEDICARE to get information on all of your options. QuoteBlock represents Medicare Advantage [HMO, PPO, or PFFS] organizations and/or Medicare-approved Part D sponsors that have a Medicare contract. Enrollment depends on the plan’s contract renewal. QuoteBlock takes no responsibility and assumes no liability for any content posted by consumers or any third party.
+                        <a href="#" class="link font-bold text-surface block lg:hidden">
+                            Read More
+                        </a>
+                    </p>
+                </section>
+                    
+                <section class="section">
+                    <div class="flex items-center flex-col gap-1 text-xl">
+                        <p class="font-bold">
+                            <span>© 2023</span>
+                            <span class="text-secondary">QuoteBlock.com</span>
+                        </p>
+
+                        <span class="font-semibold">All Right Reserved</span>
+                    </div>
+                    <div class="flex gap-4 fill-surface py-10">
+                        <span class="text-lg">
+                            The content of the website is provided for informational purposes only. No content of the website is intended to constitute or be a substitute for professional advice. In addition, this web site may contain links to third-party web sites provided as a courtesy. They are not intended to nor do they constitute an endorsement of the linked materials. When clicking on such links, please note that you are exiting this site and navigating to another. QuoteBlock.com is not responsible for the content of such websites. Email support@quoteblock.com can be used to revoke consent. Can be revoked through any reasonable means.
+                        </span>
+                    </div>
+                </section>
+            </div>
+        </footer>
+
+        <script src="./assets/index.js"></script>
+        <script type="text/javascript">
+            (() => {
+                Splide.defaults = {
+                    arrows: false,
+                    drag: true,
+                    autoplay: true
+                }
+                new Splide( '.splide' ).mount();
+            })()
+        </script>
+    </body>
+</html>
+
+
+<!-- "Complete your health profile" second page "Coverage" -->
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./dist/styles/index.css" rel="stylesheet">
+        <link href="./dist/libs/splidejs/css/splide.min.css" rel="stylesheet">
+        <script src="./dist/libs/splidejs/js/splide.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav id="navbar" class="w-full lg:bg-surface shadow-sm">
+                <div class="flex flex-col lg:flex-row lg:container lg:mx-auto lg:max-w-[1184px]">
+                    <div class="flex items-center h-[4.5rem] px-6 drop-shadow-sm bg-surface justify-between lg:drop-shadow-none">
+                        <div class="flex items-center bg-gray-400">
+                            <a href="./index.html">
+                                <svg width="83" height="41" viewBox="0 0 80 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="flex lg:hidden">
+                            <button type="button" id="navbar-btn" class="text-body focus:outline-none">
+                                <svg class="h-8 w-8 fill-current" viewBox="0 0 24 24">
+                                    <path id='navbar-btn-close' fill-rule="evenodd" clip-rule="evenodd" d="M3 7h18v2H3V7zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
+                                    <path id='navbar-btn-open' d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="navbar-menu" class="transition-all duration-700 h-0 bg-surface overflow-hidden lg:h-[4.5rem] lg:flex-1 lg:bg-surface lg:transition-none">
+                    <ul class="flex flex-col justify-center gap-6 p-6 pr-4 pt-12 lg:flex-row lg:py-0 lg:justify-end lg:h-full lg:items-center lg:gap-8">
+                        <li>
+                            <a href="./index.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                               Health Insurance
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./medicare-plans.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                Medicare Plans
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./about-us.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                About us
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./contact-us.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                Contact Us
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./privacy-policy.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                Privacy Policy
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./terms-of-service.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                Terms of Services
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    </div>   
+                </div>
+            </nav>                   
+        </header>
+
+        <main class="container max-w-[1184px] flex flex-col lg:gap-12 items-center mx-auto md:mt-5 pb-20">
+            <section class="section gap-4 lg:pr-0 lg:pt-16 lg:w-full lg:px-10 text-primary">
+                <h2 class="title md:text-center max-md:max-w-[320px]">Complete your health profile</h2>
+
+                <p class="text-2xl font-medium text-center">Coverage</p>
+                <div class="flex items-center justify-center">
+                    <hr class="flex-grow border-t-2 border-secondary mr-2 max-w-[145px] w-full">
+                    <span class="text-secondary text-2xl">2</span>
+                    <hr class="flex-grow border-t-2 border-secondary ml-2 max-w-[145px] w-full">
+                </div>
+            </section>
+
+
+            <section class="lg:section lg:gap-0 w-full">
+                <div class="flex flex-col items-center">
+                    <section class="items-center max-lg:max-w-[550px] w-full">
+                        <form class="flex flex-col px-6">
+                            <div class="flex flex-col lg:flex-row justify-between lg:gap-24">
+                                <div class="w-full">
+                                    <p class="text-2xl font-medium text-primary">Current Coverage</p>
+                                    <div class="flex justify-between py-8">
+                                        <p class="text-xl text-smokeBlack max-w-[176px] md:max-w-none">Are you currently insured? (optional)</p>
+                                        <div class="flex items-center">
+                                            <input type="checkbox" id="switch" class="hidden" />
+                                            <label for="switch" class="flex items-center cursor-pointer">
+                                            <span class="relative">
+                                                <span class="block bg-gray-300 w-[52px] h-8 rounded-full"></span>
+                                                <span class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></span>
+                                            </span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex justify-between pb-8">
+                                        <p class="text-xl text-smokeBlack max-w-[176px] md:max-w-none">I am self employed (optional)</p>
+                                        <div class="flex items-center">
+                                            <input type="checkbox" id="switch" class="hidden" />
+                                            <label for="switch" class="flex items-center cursor-pointer">
+                                            <span class="relative">
+                                                <span class="block bg-gray-300 w-[52px] h-8 rounded-full"></span>
+                                                <span class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></span>
+                                            </span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex justify-between">
+                                        <p class="text-xl text-smokeBlack max-w-[176px] md:max-w-none">Use tobacco products (optional)</p>
+                                        <div class="flex items-center">
+                                            <input type="checkbox" id="switch" class="hidden" />
+                                            <label for="switch" class="flex items-center cursor-pointer">
+                                            <span class="relative">
+                                                <span class="block bg-gray-300 w-[52px] h-8 rounded-full"></span>
+                                                <span class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></span>
+                                            </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="w-full">
+                                    <p class="text-2xl font-medium text-primary py-8 lg:pt-0">Existing Medical Conditions</p>
+                                    <div class="flex justify-between pb-8">
+                                        <p class="text-xl text-smokeBlack max-w-[176px] md:max-w-[300px]">Do you have any existing medical condition? (optional)</p>
+                                        <div class="flex items-center">
+                                            <input type="checkbox" id="switch" class="hidden" />
+                                            <label for="switch" class="flex items-center cursor-pointer">
+                                            <span class="relative">
+                                                <span class="block bg-gray-300 w-[52px] h-8 rounded-full"></span>
+                                                <span class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></span>
+                                            </span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex justify-between pb-8">
+                                        <p class="text-xl text-smokeBlack max-w-[176px] md:max-w-[300px]">Currently taking prescription medications (optional)</p>
+                                        <div class="flex items-center">
+                                            <input type="checkbox" id="switch" class="hidden" />
+                                            <label for="switch" class="flex items-center cursor-pointer">
+                                            <span class="relative">
+                                                <span class="block bg-gray-300 w-[52px] h-8 rounded-full"></span>
+                                                <span class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></span>
+                                            </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                            <button type="submit" class="mx-auto rounded-[4px] py-4 lg:mt-20 max-w-[312px] w-full bg-accent text-white hover:bg-accent font-semibold transition-all duration-500 hover:bg-transparent hover:ring-1 hover:ring-accent hover:text-accent">
+                                Next
+                            </button>
+                        </form>
+                    </section>
+                </div>
+            </section>
+        </main>
+
+        <footer class="flex flex-col items-center bg-primary text-surface">
+            <div class="flex flex-col max-lg:items-center max-w-[1184px] md:w-full md:px-14 pt-10 pb-6">
+                <div class="flex lg:justify-between lg:flex-row items-center lg:items-start max-lg:flex-col">
+                    <section class="section gap-4 lg:mb-14">
+                        <div class="flex flex-col gap-1">                            
+                            <span class="text-[20px] leading-6 font-normal max-md:w-[252px]">Call to speak with a licensed insurance agent</span>
+                            <span class="text-[20px] leading-6 font-semibold md:max-lg:text-center">M-F 9am to 7pm EST</span>
+                    </section>
+
+                    <section class="lg:section max-lg:px-6 max-lg:pb-16 flex-row gap-4 ">
+                        <div class="flex items-center gap-1">
+                            <img src="./assets/images/telephone.svg" alt="telephone">
+                            <a href="#" class="text-[20px] leading-6 font-semibold">1-833-888-0586 TTY 711</a>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="flex justify-between lg:flex-row lg:items-start max-lg:flex-col mb-6">
+                    <section class="section flex-row gap-2 max-lg:py-4 mt-1">
+                        <img src="./assets/images/help-center.svg" alt="help-center">
+                        <a href="#" class="text-[20px] leading-6 underline decoration-solid font-semibold">Help Center</a>
+                    </section>
+                    
+                    <section class="section flex-row gap-2 max-lg:py-4">
+                        <img src="./assets/images/terms-of-use.svg" alt="terms-of-use">
+                        <a href="#" class="text-[20px] leading-6 underline decoration-solid font-semibold">Terms of Services</a>
+                    </section>
+                    
+                    <section class="section flex-row gap-2 max-lg:py-4">
+                        <img src="./assets/images/privacy-policy.svg" alt="privacy-policy">
+                        <a href="#" class="text-[20px] leading-6 underline decoration-solid font-semibold">Privacy Policy</a>
+                    </section>
+                </div>
+            </div>
+
+            <div class="max-w-[1184px] ">
+                <section class="section w-full text-lg pb-14">
+                    <p class="max-lg:hidden block">
+                        QuoteBlock Insurance Services is a division of QuoteBlock, DBA: QuoteBlock.com. ©2023 QuoteBlock Insurance Services. All rights reserved. We do not offer every plan available in your area. Any information we provide is limited to those plans we do offer in your area. Please contact Medicare.gov or 1-800-MEDICARE to get information on all of your options. QuoteBlock represents Medicare Advantage [HMO, PPO, or PFFS] organizations and/or Medicare-approved Part D sponsors that have a Medicare contract. Enrollment depends on the plan’s contract renewal. QuoteBlock takes no responsibility and assumes no liability for any content posted by consumers or any third party. By completing the contact form above or calling the number listed above, you will be directed to a licensed sales agent who can answer your questions and provide information about Medicare Advantage, Prescription Drug (Part D) and Medicare Supplement insurance plans. Neither QuoteBlock Insurance Services nor its agents are connected with or endorsed by the U.S. government or the federal Medicare program. Availability of insurance companies and products are dependent on your resident zip code. Not all plans offer all of these benefits. Benefits may vary by carrier and location. Limitations and exclusions may apply. **Information related to DOB and gender is not needed for Medicare Advantage and Part D plans. *The Medicare Advantage and Prescription Drug Plan Annual Enrollment Period (AEP) runs from October 15-December 7. During this time, Medicare recipients can evaluate their current coverage and enroll in new plans for the upcoming year. 
+                        Enrollment in a plan may be limited to certain times of the year unless you qualify for a special election period or you are in your Medicare Initial Election Period.
+                    </p>
+
+                    <p class="block lg:hidden">
+                        QuoteBlock Insurance Services is a division of QuoteBlock, DBA: QuoteBlock.com. ©2023 QuoteBlock Insurance Services. All rights reserved. We do not offer every plan available in your area. Any information we provide is limited to those plans we do offer in your area. Please contact Medicare.gov or 1-800-MEDICARE to get information on all of your options. QuoteBlock represents Medicare Advantage [HMO, PPO, or PFFS] organizations and/or Medicare-approved Part D sponsors that have a Medicare contract. Enrollment depends on the plan’s contract renewal. QuoteBlock takes no responsibility and assumes no liability for any content posted by consumers or any third party.
+                        <a href="#" class="link font-bold text-surface inline-block lg:hidden">
+                            Read More
+                        </a>
+                    </p>
+                </section>
+                    
+                <section class="section">
+                    <div class="flex items-center flex-col gap-1 text-xl">
+                        <p class="font-bold">
+                            <span>© 2023</span>
+                            <span class="text-secondary">QuoteBlock.com</span>
+                        </p>
+
+                        <span class="font-semibold">All Right Reserved</span>
+                    </div>
+                    <div class="flex gap-4 fill-surface py-10">
+                        <span class="text-lg">
+                            The content of the website is provided for informational purposes only. No content of the website is intended to constitute or be a substitute for professional advice. In addition, this web site may contain links to third-party web sites provided as a courtesy. They are not intended to nor do they constitute an endorsement of the linked materials. When clicking on such links, please note that you are exiting this site and navigating to another. QuoteBlock.com is not responsible for the content of such websites. Email support@quoteblock.com can be used to revoke consent. Can be revoked through any reasonable means.
+                        </span>
+                    </div>
+                </section>
+            </div>
+        </footer>
+
+        <script src="./assets/index.js"></script>
+        <script type="text/javascript">
+            (() => {
+                Splide.defaults = {
+                    arrows: false,
+                    drag: true,
+                    autoplay: true
+                }
+                new Splide( '.splide' ).mount();
+            })()
+        </script>
+    </body>
+</html>
+
+
+<!-- "Complete your health profile" third page "Survey" -->
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./dist/styles/index.css" rel="stylesheet">
+        <link href="./dist/libs/splidejs/css/splide.min.css" rel="stylesheet">
+        <script src="./dist/libs/splidejs/js/splide.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav id="navbar" class="w-full lg:bg-surface shadow-sm">
+                <div class="flex flex-col lg:flex-row lg:container lg:mx-auto lg:max-w-[1184px]">
+                    <div class="flex items-center h-[4.5rem] px-6 drop-shadow-sm bg-surface justify-between lg:drop-shadow-none">
+                        <div class="flex items-center bg-gray-400">
+                            <a href="./index.html">
+                                <svg width="83" height="41" viewBox="0 0 80 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="flex lg:hidden">
+                            <button type="button" id="navbar-btn" class="text-body focus:outline-none">
+                                <svg class="h-8 w-8 fill-current" viewBox="0 0 24 24">
+                                    <path id='navbar-btn-close' fill-rule="evenodd" clip-rule="evenodd" d="M3 7h18v2H3V7zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
+                                    <path id='navbar-btn-open' d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="navbar-menu" class="transition-all duration-700 h-0 bg-surface overflow-hidden lg:h-[4.5rem] lg:flex-1 lg:bg-surface lg:transition-none">
+                    <ul class="flex flex-col justify-center gap-6 p-6 pr-4 pt-12 lg:flex-row lg:py-0 lg:justify-end lg:h-full lg:items-center lg:gap-8">
+                        <li>
+                            <a href="./index.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                               Health Insurance
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./medicare-plans.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                Medicare Plans
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./about-us.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                About us
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./contact-us.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                Contact Us
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./privacy-policy.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                Privacy Policy
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./terms-of-service.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                Terms of Services
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    </div>   
+                </div>
+            </nav>                   
+        </header>
+
+        <main class="container max-w-[1184px] flex flex-col items-center mx-auto md:mt-5 pb-20">
+            <section class="section lg:pr-0 lg:pt-16 lg:w-full lg:px-10 text-primary">
+                <h2 class="title md:text-center max-md:max-w-[320px]">Complete your health profile</h2>
+
+                <p class="text-2xl font-medium text-center">Survey</p>
+                <div class="flex items-center justify-center">
+                    <hr class="flex-grow border-t-2 border-secondary mr-2 max-w-[145px] w-full">
+                    <span class="text-secondary text-2xl">3</span>
+                    <hr class="flex-grow border-t-2 border-secondary ml-2 max-w-[145px] w-full">
+                </div>
+            </section>
+
+
+            <section class="lg:section lg:pt-6 lg:gap-0 w-full">
+                <div class="flex flex-col items-center">
+                    <section class="items-center max-lg:max-w-[550px] w-full">
+                        <form class="flex flex-col px-6 lg:items-center">
+                            <p class="text-2xl font-medium text-primary">Why are you shopping for new health insurance? You may be eligible for a Special Enrollment Period (optional)</p>
+                            <div class="flex flex-col items-center lg:w-[848px]">
+                                <div class="flex flex-col lg:flex-row lg:justify-between w-full lg:pt-20">
+                                    <div class="w-full lg:w-1/3">
+                                        <div class="flex justify-between py-8 lg:pt-0">
+                                            <p class="text-xl text-smokeBlack max-w-[176px] md:max-w-none">Get Married</p>
+                                            <input type="radio" id="married" name="fav_language" value="married">
+                                        </div>
+        
+                                        <div class="flex justify-between pb-8">
+                                            <p class="text-xl text-smokeBlack max-w-[176px] md:max-w-none">Recently Divorced</p>
+                                            <input type="radio" id="divorced" name="fav_language" value="divorced">
+                                        </div>
+        
+                                        <div class="flex justify-between pb-8">
+                                            <p class="text-xl text-smokeBlack max-w-[176px] md:max-w-none">Changed or lost job</p>
+                                            <input type="radio" id="change-job" name="fav_language" value="change-job">
+                                        </div>
+        
+                                        <div class="flex justify-between pb-8">
+                                            <p class="text-xl text-smokeBlack max-w-[176px] md:max-w-none lg:max-w-[176px]">Moved to a new coverage area</p>
+                                            <input type="radio" id="moved" name="fav_language" value="moved">
+                                        </div>
+                                    </div>
+
+                                    <div class="w-full lg:w-1/3">
+                                        <div class="flex justify-between pb-8">
+                                            <p class="text-xl text-smokeBlack max-w-[176px] md:max-w-none lg:max-w-[176px]">Birth or adoption of a child</p>
+                                            <input type="radio" id="child" name="fav_language" value="child">
+                                        </div>
+        
+                                        <div class="flex justify-between pb-8">
+                                            <p class="text-xl text-smokeBlack max-w-[176px] md:max-w-[270px] lg:max-w-[176px]">Other- change in dependents, dsability, income, etc.</p>
+                                            <input type="radio" id="other" name="fav_language" value="other">
+                                        </div>
+        
+                                        <div class="flex justify-between pb-8">
+                                            <p class="text-xl text-smokeBlack max-w-[176px] md:max-w-none">None of these</p>
+                                            <input type="radio" id="none" name="fav_language" value="none">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="mx-auto rounded-[4px] py-4 lg:mt-20 max-w-[312px] w-full bg-accent text-white hover:bg-accent font-semibold transition-all duration-500 hover:bg-transparent hover:ring-1 hover:ring-accent hover:text-accent">
+                                Next
+                            </button>
+                        </form>
+                    </section>
+                </div>
+            </section>
+        </main>
+
+        <footer class="flex flex-col items-center bg-primary text-surface">
+            <div class="flex flex-col max-lg:items-center max-w-[1184px] md:w-full md:px-14 pt-10 pb-6">
+                <div class="flex lg:justify-between lg:flex-row items-center lg:items-start max-lg:flex-col">
+                    <section class="section gap-4 lg:mb-14">
+                        <div class="flex flex-col gap-1">                            
+                            <span class="text-[20px] leading-6 font-normal max-md:w-[252px]">Call to speak with a licensed insurance agent</span>
+                            <span class="text-[20px] leading-6 font-semibold md:max-lg:text-center">M-F 9am to 7pm EST</span>
+                    </section>
+
+                    <section class="lg:section max-lg:px-6 max-lg:pb-16 flex-row gap-4 ">
+                        <div class="flex items-center gap-1">
+                            <img src="./assets/images/telephone.svg" alt="telephone">
+                            <a href="#" class="text-[20px] leading-6 font-semibold">1-833-888-0586 TTY 711</a>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="flex justify-between lg:flex-row lg:items-start max-lg:flex-col mb-6">
+                    <section class="section flex-row gap-2 max-lg:py-4 mt-1">
+                        <img src="./assets/images/help-center.svg" alt="help-center">
+                        <a href="#" class="text-[20px] leading-6 underline decoration-solid font-semibold">Help Center</a>
+                    </section>
+                    
+                    <section class="section flex-row gap-2 max-lg:py-4">
+                        <img src="./assets/images/terms-of-use.svg" alt="terms-of-use">
+                        <a href="#" class="text-[20px] leading-6 underline decoration-solid font-semibold">Terms of Services</a>
+                    </section>
+                    
+                    <section class="section flex-row gap-2 max-lg:py-4">
+                        <img src="./assets/images/privacy-policy.svg" alt="privacy-policy">
+                        <a href="#" class="text-[20px] leading-6 underline decoration-solid font-semibold">Privacy Policy</a>
+                    </section>
+                </div>
+            </div>
+
+            <div class="max-w-[1184px] ">
+                <section class="section w-full text-lg pb-14">
+                    <p class="max-lg:hidden block">
+                        QuoteBlock Insurance Services is a division of QuoteBlock, DBA: QuoteBlock.com. ©2023 QuoteBlock Insurance Services. All rights reserved. We do not offer every plan available in your area. Any information we provide is limited to those plans we do offer in your area. Please contact Medicare.gov or 1-800-MEDICARE to get information on all of your options. QuoteBlock represents Medicare Advantage [HMO, PPO, or PFFS] organizations and/or Medicare-approved Part D sponsors that have a Medicare contract. Enrollment depends on the plan’s contract renewal. QuoteBlock takes no responsibility and assumes no liability for any content posted by consumers or any third party. By completing the contact form above or calling the number listed above, you will be directed to a licensed sales agent who can answer your questions and provide information about Medicare Advantage, Prescription Drug (Part D) and Medicare Supplement insurance plans. Neither QuoteBlock Insurance Services nor its agents are connected with or endorsed by the U.S. government or the federal Medicare program. Availability of insurance companies and products are dependent on your resident zip code. Not all plans offer all of these benefits. Benefits may vary by carrier and location. Limitations and exclusions may apply. **Information related to DOB and gender is not needed for Medicare Advantage and Part D plans. *The Medicare Advantage and Prescription Drug Plan Annual Enrollment Period (AEP) runs from October 15-December 7. During this time, Medicare recipients can evaluate their current coverage and enroll in new plans for the upcoming year. 
+                        Enrollment in a plan may be limited to certain times of the year unless you qualify for a special election period or you are in your Medicare Initial Election Period.
+                    </p>
+
+                    <p class="block lg:hidden">
+                        QuoteBlock Insurance Services is a division of QuoteBlock, DBA: QuoteBlock.com. ©2023 QuoteBlock Insurance Services. All rights reserved. We do not offer every plan available in your area. Any information we provide is limited to those plans we do offer in your area. Please contact Medicare.gov or 1-800-MEDICARE to get information on all of your options. QuoteBlock represents Medicare Advantage [HMO, PPO, or PFFS] organizations and/or Medicare-approved Part D sponsors that have a Medicare contract. Enrollment depends on the plan’s contract renewal. QuoteBlock takes no responsibility and assumes no liability for any content posted by consumers or any third party.
+                        <a href="#" class="link font-bold text-surface inline-block lg:hidden">
+                            Read More
+                        </a>
+                    </p>
+                </section>
+                    
+                <section class="section">
+                    <div class="flex items-center flex-col gap-1 text-xl">
+                        <p class="font-bold">
+                            <span>© 2023</span>
+                            <span class="text-secondary">QuoteBlock.com</span>
+                        </p>
+
+                        <span class="font-semibold">All Right Reserved</span>
+                    </div>
+                    <div class="flex gap-4 fill-surface py-10">
+                        <span class="text-lg">
+                            The content of the website is provided for informational purposes only. No content of the website is intended to constitute or be a substitute for professional advice. In addition, this web site may contain links to third-party web sites provided as a courtesy. They are not intended to nor do they constitute an endorsement of the linked materials. When clicking on such links, please note that you are exiting this site and navigating to another. QuoteBlock.com is not responsible for the content of such websites. Email support@quoteblock.com can be used to revoke consent. Can be revoked through any reasonable means.
+                        </span>
+                    </div>
+                </section>
+            </div>
+        </footer>
+
+        <script src="./assets/index.js"></script>
+        <script type="text/javascript">
+            (() => {
+                Splide.defaults = {
+                    arrows: false,
+                    drag: true,
+                    autoplay: true
+                }
+                new Splide( '.splide' ).mount();
+            })()
+        </script>
+    </body>
+</html>
+
+
+<!-- "Complete your health profile" fourth page "contact" -->
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./dist/styles/index.css" rel="stylesheet">
+        <link href="./dist/libs/splidejs/css/splide.min.css" rel="stylesheet">
+        <script src="./dist/libs/splidejs/js/splide.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav id="navbar" class="w-full lg:bg-surface shadow-sm">
+                <div class="flex flex-col lg:flex-row lg:container lg:mx-auto lg:max-w-[1184px]">
+                    <div class="flex items-center h-[4.5rem] px-6 drop-shadow-sm bg-surface justify-between lg:drop-shadow-none">
+                        <div class="flex items-center bg-gray-400">
+                            <a href="./index.html">
+                                <svg width="83" height="41" viewBox="0 0 80 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="flex lg:hidden">
+                            <button type="button" id="navbar-btn" class="text-body focus:outline-none">
+                                <svg class="h-8 w-8 fill-current" viewBox="0 0 24 24">
+                                    <path id='navbar-btn-close' fill-rule="evenodd" clip-rule="evenodd" d="M3 7h18v2H3V7zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
+                                    <path id='navbar-btn-open' d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="navbar-menu" class="transition-all duration-700 h-0 bg-surface overflow-hidden lg:h-[4.5rem] lg:flex-1 lg:bg-surface lg:transition-none">
+                    <ul class="flex flex-col justify-center gap-6 p-6 pr-4 pt-12 lg:flex-row lg:py-0 lg:justify-end lg:h-full lg:items-center lg:gap-8">
+                        <li>
+                            <a href="./index.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                               Health Insurance
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./medicare-plans.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                Medicare Plans
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./about-us.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                About us
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./contact-us.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                Contact Us
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./privacy-policy.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                Privacy Policy
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./terms-of-service.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                Terms of Services
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    </div>   
+                </div>
+            </nav>                   
+        </header>
+
+        <main class="container max-w-[1184px] flex flex-col items-center mx-auto md:mt-5 pb-20">
+            <section class="section gap-4 lg:pr-0 lg:pt-16 lg:w-full lg:px-10 text-primary">
+                <h2 class="title md:text-center max-md:max-w-[320px]">Complete your health profile</h2>
+
+                <p class="text-2xl font-medium text-center">Contact</p>
+                <div class="flex items-center justify-center">
+                    <hr class="flex-grow border-t-2 border-secondary mr-2 max-w-[145px] w-full">
+                    <span class="text-secondary text-2xl">4</span>
+                    <hr class="flex-grow border-t-2 border-secondary ml-2 max-w-[145px] w-full">
+                </div>
+            </section>
+
+            <div class="flex flex-col items-center mt-4 w-full">
+                <section class="items-center w-full">
+                    <form class="flex flex-col gap-10 px-6">
+                        <p class="text-2xl font-medium text-primary">Contact Information</p>
+                        <div class="max-w-[550px] md:w-full mx-auto">
+                            <div class="pb-8">
+                                <p class="pl-1 pb-1 text-xl text-smokeBlack">Street Address</p>
+                                <input type="text" name="address" placeholder="Street Address" class="bg-inputs w-full p-2.5 rounded-[4px]" />
+                            </div>
+                            <div class="pb-8">
+                                <p class="pl-1 pb-1 text-xl text-smokeBlack">City</p>
+                                <input type="text" name="citt" placeholder="City" class="bg-inputs w-full p-2.5 rounded-[4px]" />
+                            </div>
+                            <div class="pb-8">
+                                <p class="pl-1 pb-1 text-xl text-smokeBlack">State</p>
+                                <select type="number" name="size" aria-label="state" class="bg-inputs p-2.5 rounded-[4px] w-full r-2">
+                                    <option disabled selected value="">State</option>
+                                    <option value="">A</option>
+                                    <option value="">B</option>
+                                    <option value="">C</option>
+                                </select>
+                            </div>
+                            <div class="pb-8">
+                                <p class="text-xl text-smokeBlack">Phone Number *</p>
+                                <div class="flex">
+                                    <select type="number" name="area" aria-label="code area" class="bg-inputs p-2.5 rounded-[4px] min-w-[80px] w-1/6 mr-2">
+                                        <option value="+234">+234</option>
+                                        <option value="+54">+54</option>
+                                        <option value="+1">+1</option>
+                                    </select>
+                                    <input type="number" name="phone" placeholder="0000 000 0000" class="bg-inputs w-full p-2.5 rounded-[4px]" />
+                                </div>
+                            </div>
+                            <div class="pb-8">
+                                <p class="pl-1 pb-1 text-xl text-smokeBlack">Email</p>
+                                <input type="email" name="email" placeholder="Email" class="bg-inputs w-full p-2.5 rounded-[4px]" />
+                            </div>
+                        </div>
+                        <div class="flex flex-row items-start px-">
+                            <input type="checkbox" id="check" name="check" value="check" class="mt-1 mr-2">
+                            <p class="pl-1 pb-1 text-xl text-smokeBlack">
+                                By clicking Submit, I give express written consent by electronic signature to receive marketing communications regarding insurance products and services via automated telephone dialing system and/or pre-recorded calls and/or sms/mms and/or artificial voice messages from QuoteBlock.com and one or more of it's marketing partners or its licensed insurance agents at the phone number and/or e-mail address provided to us, including wireless numbers, if applicable, even if I have previously registered the provided number on the do not call registry. Email support@quoteblock.com can be used to revoke consent. Can be revoked through any reasonable means. SMS/MMS and data messaging rates may apply. This consent is not required as a condition to purchase products and services including Medicare Supplement, Medicare Advantage and prescription drug plans, consent can be revoked through any reasonable means. This is a solicitation for insurance, to receive quotes without providing consent, please call at 1-(850) 308-4452. Carrier data rates may apply. By clicking Submit, I agree to the Privacy Policy and Terms & Conditions.
+                            </p>
+                        </div>
+                        <button type="submit" class="mx-auto rounded-[4px] py-4 max-w-[312px] w-full bg-accent text-white hover:bg-accent font-semibold transition-all duration-500 hover:bg-transparent hover:ring-1 hover:ring-accent hover:text-accent">
+                            Next
+                        </button>
+                    </form>
+                </section>
+            </div>
+        </main>
+
+        <footer class="flex flex-col items-center bg-primary text-surface">
+            <div class="flex flex-col max-lg:items-center max-w-[1184px] md:w-full md:px-14 pt-10 pb-6">
+                <div class="flex lg:justify-between lg:flex-row items-center lg:items-start max-lg:flex-col">
+                    <section class="section gap-4 lg:mb-14">
+                        <div class="flex flex-col gap-1">                            
+                            <span class="text-[20px] leading-6 font-normal max-md:w-[252px]">Call to speak with a licensed insurance agent</span>
+                            <span class="text-[20px] leading-6 font-semibold md:max-lg:text-center">M-F 9am to 7pm EST</span>
+                    </section>
+
+                    <section class="lg:section max-lg:px-6 max-lg:pb-16 flex-row gap-4 ">
+                        <div class="flex items-center gap-1">
+                            <img src="./assets/images/telephone.svg" alt="telephone">
+                            <a href="#" class="text-[20px] leading-6 font-semibold">1-833-888-0586 TTY 711</a>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="flex justify-between lg:flex-row lg:items-start max-lg:flex-col mb-6">
+                    <section class="section flex-row gap-2 max-lg:py-4 mt-1">
+                        <img src="./assets/images/help-center.svg" alt="help-center">
+                        <a href="#" class="text-[20px] leading-6 underline decoration-solid font-semibold">Help Center</a>
+                    </section>
+                    
+                    <section class="section flex-row gap-2 max-lg:py-4">
+                        <img src="./assets/images/terms-of-use.svg" alt="terms-of-use">
+                        <a href="#" class="text-[20px] leading-6 underline decoration-solid font-semibold">Terms of Services</a>
+                    </section>
+                    
+                    <section class="section flex-row gap-2 max-lg:py-4">
+                        <img src="./assets/images/privacy-policy.svg" alt="privacy-policy">
+                        <a href="#" class="text-[20px] leading-6 underline decoration-solid font-semibold">Privacy Policy</a>
+                    </section>
+                </div>
+            </div>
+
+            <div class="max-w-[1184px] ">
+                <section class="section w-full text-lg pb-14">
+                    <p class="max-lg:hidden block">
+                        QuoteBlock Insurance Services is a division of QuoteBlock, DBA: QuoteBlock.com. ©2023 QuoteBlock Insurance Services. All rights reserved. We do not offer every plan available in your area. Any information we provide is limited to those plans we do offer in your area. Please contact Medicare.gov or 1-800-MEDICARE to get information on all of your options. QuoteBlock represents Medicare Advantage [HMO, PPO, or PFFS] organizations and/or Medicare-approved Part D sponsors that have a Medicare contract. Enrollment depends on the plan’s contract renewal. QuoteBlock takes no responsibility and assumes no liability for any content posted by consumers or any third party. By completing the contact form above or calling the number listed above, you will be directed to a licensed sales agent who can answer your questions and provide information about Medicare Advantage, Prescription Drug (Part D) and Medicare Supplement insurance plans. Neither QuoteBlock Insurance Services nor its agents are connected with or endorsed by the U.S. government or the federal Medicare program. Availability of insurance companies and products are dependent on your resident zip code. Not all plans offer all of these benefits. Benefits may vary by carrier and location. Limitations and exclusions may apply. **Information related to DOB and gender is not needed for Medicare Advantage and Part D plans. *The Medicare Advantage and Prescription Drug Plan Annual Enrollment Period (AEP) runs from October 15-December 7. During this time, Medicare recipients can evaluate their current coverage and enroll in new plans for the upcoming year. 
+                        Enrollment in a plan may be limited to certain times of the year unless you qualify for a special election period or you are in your Medicare Initial Election Period.
+                    </p>
+
+                    <p class="block lg:hidden">
+                        QuoteBlock Insurance Services is a division of QuoteBlock, DBA: QuoteBlock.com. ©2023 QuoteBlock Insurance Services. All rights reserved. We do not offer every plan available in your area. Any information we provide is limited to those plans we do offer in your area. Please contact Medicare.gov or 1-800-MEDICARE to get information on all of your options. QuoteBlock represents Medicare Advantage [HMO, PPO, or PFFS] organizations and/or Medicare-approved Part D sponsors that have a Medicare contract. Enrollment depends on the plan’s contract renewal. QuoteBlock takes no responsibility and assumes no liability for any content posted by consumers or any third party.
+                        <a href="#" class="link font-bold text-surface block lg:hidden">
+                            Read More
+                        </a>
+                    </p>
+                </section>
+                    
+                <section class="section">
+                    <div class="flex items-center flex-col gap-1 text-xl">
+                        <p class="font-bold">
+                            <span>© 2023</span>
+                            <span class="text-secondary">QuoteBlock.com</span>
+                        </p>
+
+                        <span class="font-semibold">All Right Reserved</span>
+                    </div>
+                    <div class="flex gap-4 fill-surface py-10">
+                        <span class="text-lg">
+                            The content of the website is provided for informational purposes only. No content of the website is intended to constitute or be a substitute for professional advice. In addition, this web site may contain links to third-party web sites provided as a courtesy. They are not intended to nor do they constitute an endorsement of the linked materials. When clicking on such links, please note that you are exiting this site and navigating to another. QuoteBlock.com is not responsible for the content of such websites. Email support@quoteblock.com can be used to revoke consent. Can be revoked through any reasonable means.
+                        </span>
+                    </div>
+                </section>
+            </div>
+        </footer>
+
+        <script src="./assets/index.js"></script>
+        <script type="text/javascript">
+            (() => {
+                Splide.defaults = {
+                    arrows: false,
+                    drag: true,
+                    autoplay: true
+                }
+                new Splide( '.splide' ).mount();
+            })()
+        </script>
+    </body>
+</html>
+
+
+<!-- "Complete your health profile" fifth page "you're finished!" -->
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./dist/styles/index.css" rel="stylesheet">
+        <link href="./dist/libs/splidejs/css/splide.min.css" rel="stylesheet">
+        <script src="./dist/libs/splidejs/js/splide.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav id="navbar" class="w-full lg:bg-surface shadow-sm">
+                <div class="flex flex-col lg:flex-row lg:container lg:mx-auto lg:max-w-[1184px]">
+                    <div class="flex items-center h-[4.5rem] px-6 drop-shadow-sm bg-surface justify-between lg:drop-shadow-none">
+                        <div class="flex items-center bg-gray-400">
+                            <a href="./index.html">
+                                <svg width="83" height="41" viewBox="0 0 80 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="flex lg:hidden">
+                            <button type="button" id="navbar-btn" class="text-body focus:outline-none">
+                                <svg class="h-8 w-8 fill-current" viewBox="0 0 24 24">
+                                    <path id='navbar-btn-close' fill-rule="evenodd" clip-rule="evenodd" d="M3 7h18v2H3V7zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
+                                    <path id='navbar-btn-open' d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="navbar-menu" class="transition-all duration-700 h-0 bg-surface overflow-hidden lg:h-[4.5rem] lg:flex-1 lg:bg-surface lg:transition-none">
+                    <ul class="flex flex-col justify-center gap-6 p-6 pr-4 pt-12 lg:flex-row lg:py-0 lg:justify-end lg:h-full lg:items-center lg:gap-8">
+                        <li>
+                            <a href="./index.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                               Health Insurance
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./medicare-plans.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                Medicare Plans
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./about-us.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                About us
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./contact-us.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                Contact Us
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./privacy-policy.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                Privacy Policy
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./terms-of-service.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                Terms of Services
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    </div>   
+                </div>
+            </nav>                   
+        </header>
+
+        <main class="container max-w-[1184px] flex flex-col items-center mx-auto md:mt-5 pb-20">
+            <section class="section gap-4 lg:pr-0 lg:pt-16 lg:w-full lg:px-10 text-primary">
+                <h2 class="title md:text-center max-md:max-w-[320px]">You're Finished!</h2>
+            </section>
+
+            <section class="section lg:gap-0 lg:pt-16 lg:flex-row md:justify-between lg:w-full lg:px-10">
+                <div class="flex flex-col lg:m-0 max-lg:items-center justify-center">
+                    <p class="text-2xl font-medium text-primary max-w-[300px] pb-10 lg:pb-20">
+                        Thank you for completing the form. A licensed insurance agent will contact you soon!
+                    </p>
+                    
+                    <img src="./assets/images/contact-us.svg" alt="contact us" class="lg:hidden">
+                    
+                    <form class="flex flex-col lg:w-[312px] max-w-[400px] max-lg:w-full">
+                        <button class="mt-auto rounded-lg py-4 bg-accent text-white hover:bg-accent font-semibold md:block">
+                            Back to Home
+                        </button>
+                    </form>
+                </div>
+
+                <img src="./assets/images/contact-us.svg" alt="contact us" class="max-lg:hidden pr-10">
+            </section>
+        </main>
+
+        <footer class="flex flex-col items-center bg-primary text-surface">
+            <div class="flex flex-col max-lg:items-center max-w-[1184px] md:w-full md:px-14 pt-10 pb-6">
+                <div class="flex lg:justify-between lg:flex-row items-center lg:items-start max-lg:flex-col">
+                    <section class="section gap-4 lg:mb-14">
+                        <div class="flex flex-col gap-1">                            
+                            <span class="text-[20px] leading-6 font-normal max-md:w-[252px]">Call to speak with a licensed insurance agent</span>
+                            <span class="text-[20px] leading-6 font-semibold md:max-lg:text-center">M-F 9am to 7pm EST</span>
+                    </section>
+
+                    <section class="lg:section max-lg:px-6 max-lg:pb-16 flex-row gap-4 ">
+                        <div class="flex items-center gap-1">
+                            <img src="./assets/images/telephone.svg" alt="telephone">
+                            <a href="#" class="text-[20px] leading-6 font-semibold">1-833-888-0586 TTY 711</a>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="flex justify-between lg:flex-row lg:items-start max-lg:flex-col mb-6">
+                    <section class="section flex-row gap-2 max-lg:py-4 mt-1">
+                        <img src="./assets/images/help-center.svg" alt="help-center">
+                        <a href="#" class="text-[20px] leading-6 underline decoration-solid font-semibold">Help Center</a>
+                    </section>
+                    
+                    <section class="section flex-row gap-2 max-lg:py-4">
+                        <img src="./assets/images/terms-of-use.svg" alt="terms-of-use">
+                        <a href="#" class="text-[20px] leading-6 underline decoration-solid font-semibold">Terms of Services</a>
+                    </section>
+                    
+                    <section class="section flex-row gap-2 max-lg:py-4">
+                        <img src="./assets/images/privacy-policy.svg" alt="privacy-policy">
+                        <a href="#" class="text-[20px] leading-6 underline decoration-solid font-semibold">Privacy Policy</a>
+                    </section>
+                </div>
+            </div>
+
+            <div class="max-w-[1184px] ">
+                <section class="section w-full text-lg pb-14">
+                    <p class="max-lg:hidden block">
+                        QuoteBlock Insurance Services is a division of QuoteBlock, DBA: QuoteBlock.com. ©2023 QuoteBlock Insurance Services. All rights reserved. We do not offer every plan available in your area. Any information we provide is limited to those plans we do offer in your area. Please contact Medicare.gov or 1-800-MEDICARE to get information on all of your options. QuoteBlock represents Medicare Advantage [HMO, PPO, or PFFS] organizations and/or Medicare-approved Part D sponsors that have a Medicare contract. Enrollment depends on the plan’s contract renewal. QuoteBlock takes no responsibility and assumes no liability for any content posted by consumers or any third party. By completing the contact form above or calling the number listed above, you will be directed to a licensed sales agent who can answer your questions and provide information about Medicare Advantage, Prescription Drug (Part D) and Medicare Supplement insurance plans. Neither QuoteBlock Insurance Services nor its agents are connected with or endorsed by the U.S. government or the federal Medicare program. Availability of insurance companies and products are dependent on your resident zip code. Not all plans offer all of these benefits. Benefits may vary by carrier and location. Limitations and exclusions may apply. **Information related to DOB and gender is not needed for Medicare Advantage and Part D plans. *The Medicare Advantage and Prescription Drug Plan Annual Enrollment Period (AEP) runs from October 15-December 7. During this time, Medicare recipients can evaluate their current coverage and enroll in new plans for the upcoming year. 
+                        Enrollment in a plan may be limited to certain times of the year unless you qualify for a special election period or you are in your Medicare Initial Election Period.
+                    </p>
+
+                    <p class="block lg:hidden">
+                        QuoteBlock Insurance Services is a division of QuoteBlock, DBA: QuoteBlock.com. ©2023 QuoteBlock Insurance Services. All rights reserved. We do not offer every plan available in your area. Any information we provide is limited to those plans we do offer in your area. Please contact Medicare.gov or 1-800-MEDICARE to get information on all of your options. QuoteBlock represents Medicare Advantage [HMO, PPO, or PFFS] organizations and/or Medicare-approved Part D sponsors that have a Medicare contract. Enrollment depends on the plan’s contract renewal. QuoteBlock takes no responsibility and assumes no liability for any content posted by consumers or any third party.
+                        <a href="#" class="link font-bold text-surface block lg:hidden">
+                            Read More
+                        </a>
+                    </p>
+                </section>
+                    
+                <section class="section">
+                    <div class="flex items-center flex-col gap-1 text-xl">
+                        <p class="font-bold">
+                            <span>© 2023</span>
+                            <span class="text-secondary">QuoteBlock.com</span>
+                        </p>
+
+                        <span class="font-semibold">All Right Reserved</span>
+                    </div>
+                    <div class="flex gap-4 fill-surface py-10">
+                        <span class="text-lg">
+                            The content of the website is provided for informational purposes only. No content of the website is intended to constitute or be a substitute for professional advice. In addition, this web site may contain links to third-party web sites provided as a courtesy. They are not intended to nor do they constitute an endorsement of the linked materials. When clicking on such links, please note that you are exiting this site and navigating to another. QuoteBlock.com is not responsible for the content of such websites. Email support@quoteblock.com can be used to revoke consent. Can be revoked through any reasonable means.
+                        </span>
+                    </div>
+                </section>
+            </div>
+        </footer>
+
+        <script src="./assets/index.js"></script>
+        <script type="text/javascript">
+            (() => {
+                Splide.defaults = {
+                    arrows: false,
+                    drag: true,
+                    autoplay: true
+                }
+                new Splide( '.splide' ).mount();
+            })()
+        </script>
+    </body>
+</html>
