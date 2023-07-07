@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./dist/styles/index.css" rel="stylesheet">
+        <link href="./dist/libs/splidejs/css/splide.min.css" rel="stylesheet">
+        <script src="./dist/libs/splidejs/js/splide.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav id="navbar" class="w-full lg:bg-surface shadow-sm">
+                <div class="flex flex-col lg:flex-row lg:container lg:mx-auto lg:max-w-[1184px]">
+                    <div class="flex items-center h-[4.5rem] px-6 drop-shadow-sm bg-surface justify-between lg:drop-shadow-none">
+                        <div class="flex items-center bg-gray-400">
+                            <a href="./index.html">
+                                <svg width="83" height="41" viewBox="0 0 80 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="flex lg:hidden">
+                            <button type="button" id="navbar-btn" class="text-body focus:outline-none">
+                                <svg class="h-8 w-8 fill-current" viewBox="0 0 24 24">
+                                    <path id='navbar-btn-close' fill-rule="evenodd" clip-rule="evenodd" d="M3 7h18v2H3V7zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
+                                    <path id='navbar-btn-open' d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="navbar-menu" class="transition-all duration-700 h-0 bg-surface overflow-hidden lg:h-[4.5rem] lg:flex-1 lg:bg-surface lg:transition-none">
+                    <ul class="flex flex-col justify-center gap-6 p-6 pr-4 pt-12 lg:flex-row lg:py-0 lg:justify-end lg:h-full lg:items-center lg:gap-8">
+                        <li>
+                            <a href="./index.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                               Health Insurance
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./medicare-plans.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                Medicare Plans
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./about-us.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                About us
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./contact-us.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                Contact Us
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./privacy-policy.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                Privacy Policy
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./terms-of-service.html" class="py-2.5 hover:text-4xl transition-all flex text-3xl items-center justify-between lg:text-base lg:hover:text-lg">
+                                Terms of Services
+                                <svg class="h-12 w-12 lg:hidden" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.21739 17.2826C9.07246 17.1377 9 16.9661 9 16.7678C9 16.5696 9.07246 16.3982 9.21739 16.2536L13.4638 12.0072L9.2029 7.74638C9.06763 7.61111 9 7.44203 9 7.23913C9 7.03623 9.07246 6.86232 9.21739 6.71739C9.36232 6.57246 9.53391 6.5 9.73217 6.5C9.93043 6.5 10.1018 6.57246 10.2464 6.71739L15.1159 11.6014C15.1739 11.6594 15.2151 11.7222 15.2394 11.7899C15.2638 11.8575 15.2757 11.93 15.2754 12.0072C15.2754 12.0845 15.2632 12.157 15.2388 12.2246C15.2145 12.2923 15.1735 12.3551 15.1159 12.413L10.2319 17.2971C10.0966 17.4324 9.92985 17.5 9.73159 17.5C9.53333 17.5 9.36193 17.4275 9.21739 17.2826Z" fill="#3F3F3F"/>        
+                                </svg>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    </div>   
+                </div>
+            </nav>                   
+        </header>
+
+        <main class="container max-w-[1184px] flex flex-col lg:flex-row lg:gap-12 items-center mx-auto md:mt-5 lg:mt-0 pb-20">
+            <section class="section pt-6 pb-0 gap-0 lg:pr-0 lg:pt-32 lg:w-full lg:px-10">
+                <p class="title text-[42px] leading-[49px] max-w-[312px] md:max-w-[600px] text-primary pb-6 ">
+                    <span class="text-primary">Have you been </span>
+                    <span class="text-accent">injured </span><span class="text-primary"> in an </span>
+                    <span class="text-primary">accident?</span>
+                </p>
+
+                <p class="text-primary text-2xl font-medium md:max-w-[600px] pb-4">
+                    Our goal is to get you best results, as quickly as possible.
+                </p>
+
+                <p class=" text-accent text-2xl font-medium pb-6 lg:pb-12 xl:pb-24">
+                    Contact us today for free case evaluation.
+                </p>
+
+                <p class="text-primary text-[28px] leading-8 lg:text-[42px] lg:leading-[49px] font-medium">
+                    Free case evaluation
+                </p>
+
+                <!-- Arrow lg-->
+                <div class="w-10 h-10 max-lg:hidden">
+                    <svg id="arrow" height="24" viewBox="0 0 545 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M544.061 13.0607C544.646 12.4749 544.646 11.5251 544.061 10.9393L534.515 1.3934C533.929 0.807611 532.979 0.807611 532.393 1.3934C531.808 1.97919 531.808 2.92893 532.393 3.51472L540.879 12L532.393 20.4853C531.808 21.0711 531.808 22.0208 532.393 22.6066C532.979 23.1924 533.929 23.1924 534.515 22.6066L544.061 13.0607ZM0 13.5H543V10.5H0V13.5Z" fill="#0E2549"/>
+                    </svg>
+                </div>
+            </section>
+            
+            <!-- Background div -->
+            <div class="flex flex-col justify-center items-center bg-cover bg-center h-[500px] w-full md:w-[440px] lg:h-[530px] lg:w-full relative mt-2 lg:mt-[75px]" style="background-image: url('assets/images/injured-bg.svg')">
+                <!-- Arrow sm-->
+                <div class="w-[270px] flex absolute top-0 left-0 md:hidden">
+                    <div class=" w-6 h-20 ml-[100%]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="71" viewBox="0 0 16 71" fill="none">
+                            <path d="M7.29289 70.7071C7.68341 71.0976 8.31658 71.0976 8.7071 70.7071L15.0711 64.3431C15.4616 63.9526 15.4616 63.3195 15.0711 62.9289C14.6805 62.5384 14.0474 62.5384 13.6569 62.9289L8 68.5858L2.34314 62.9289C1.95262 62.5384 1.31945 62.5384 0.928929 62.9289C0.538405 63.3195 0.538405 63.9526 0.928929 64.3431L7.29289 70.7071ZM7 -4.37113e-08L7 70L9 70L9 4.37113e-08L7 -4.37113e-08Z" fill="#0E2549"/>
+                        </svg>
+                    </div>
+                </div>
+                  
+                <!-- Card 1 -->
+                <div id="cardContainer1" data-card="1" class="rounded-lg bg-surface shadow-2xl w-[312px] h-[312px] lg:w-[360px] lg:h-[360px] xl:w-[440px] xl:h-[440px]  justify-between flex flex-col">
+                
+                    <!-- Steps indicator -->
+                    <div class="flex mx-12 mt-6 mb-12 lg:mx-auto lg:mt-8">
+                        <!-- Step 1 active-->
+                        <div>
+                            <div class="w-6 h-6 lg:w-8 lg:h-8 rounded-full border-2 border-primary flex items-center justify-center">
+                                <div class="w-2 h-2 lg:w-[10px] lg:h-[10px] bg-primary rounded-full"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2 -->
+                        <div class="flex items-center justify-center">
+                            <div class="w-10 lg:w-[58px] h-[2px] bg-[#D1D5DB]"></div>
+                            <div class="w-6 h-6 lg:w-8 lg:h-8 rounded-full border-2 border-[#D1D5DB]"></div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="flex items-center justify-center">
+                            <div class="w-10 lg:w-[58px] h-[2px] bg-[#D1D5DB]"></div>
+                            <div class="w-6 h-6 lg:w-8 lg:h-8 rounded-full border-2 border-[#D1D5DB]"></div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="flex items-center justify-center">
+                            <div class="w-10 lg:w-[58px] h-[2px] bg-[#D1D5DB]"></div>
+                            <div class="w-6 h-6 lg:w-8 lg:h-8 rounded-full border-2 border-[#D1D5DB]"></div>
+                        </div>
+                    </div>
+
+                    <p class="text-[22px] leading-[26px] lg:text-3xl text-primary font-semibold mx-8">Were you injured in an accident that wasn't your fault?</p>
+                    
+                    <div class="flex justify-center mt-16 mb-4">
+                        <button class="w-[100px] p-3 rounded text-smokeBlack font-medium bg-surface shadow-2xl mr-4">No</button>
+                        <button class="w-[100px] p-3 rounded text-surface font-bold bg-accent shadow-2xl" onclick="nextCard()">Yes</button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div id="cardContainer2" data-card="2" class="rounded-lg bg-surface shadow-2xl w-[312px] h-[312px] lg:w-[360px] lg:h-[360px] xl:w-[440px] xl:h-[440px]  justify-between flex flex-col hidden">
+                
+                    <!-- Steps indicator -->
+                    <div class="flex mx-12 mt-6 mb-12 lg:mx-auto lg:mt-8">
+                        <!-- Step 1 -->
+                        <div>
+                            <div class="w-6 h-6 lg:w-8 lg:h-8 rounded-full bg-primary flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white fill-current" viewBox="0 0 24 24">
+                                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                                </svg>
+                            </div>
+                              
+                        </div>
+                        
+                        <!-- Step 2 active-->
+                        <div class="flex items-center justify-center">
+                            <div class="w-10 lg:w-[58px] h-[2px] bg-primary"></div>
+                            <div class="w-6 h-6 lg:w-8 lg:h-8 rounded-full border-2 border-primary flex items-center justify-center">
+                                <div class="w-2 h-2 lg:w-[10px] lg:h-[10px] bg-primary rounded-full"></div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="flex items-center justify-center">
+                            <div class="w-10 lg:w-[58px] h-[2px] bg-[#D1D5DB]"></div>
+                            <div class="w-6 h-6 lg:w-8 lg:h-8 rounded-full border-2 border-[#D1D5DB]"></div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="flex items-center justify-center">
+                            <div class="w-10 lg:w-[58px] h-[2px] bg-[#D1D5DB]"></div>
+                            <div class="w-6 h-6 lg:w-8 lg:h-8 rounded-full border-2 border-[#D1D5DB]"></div>
+                        </div>
+                    </div>
+
+                    <div class="w-full px-8">
+                        <p class="text-xl lg:text-2xl text-primary font-semibold mb-4">What state are you currently in?</p>
+                        
+                        <select type="text" name="state" aria-label="state" class="bg-inputs p-2.5 rounded-[4px] mb-[29px] w-full shadow-2xl">
+                            <option disabled selected value="">Select a state</option>
+                            <option value="Alabama">Alabama</option>
+                            <option value="Alaska">Alaska</option>
+                            <option value="California">California</option>
+                        </select>
+                    </div>
+
+                    <div class="flex justify-center mb-4">
+                        <button class="w-[100px] p-3 rounded text-smokeBlack font-medium bg-surface shadow-2xl mr-4" onclick="previousCard()">Back</button>
+                        <button class="w-[100px] p-3 rounded text-surface font-bold bg-accent shadow-2xl" onclick="nextCard()">Yes</button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div id="cardContainer3" data-card="3" class="rounded-lg bg-surface shadow-2xl w-[312px] h-[312px] lg:w-[360px] lg:h-[360px] xl:w-[440px] xl:h-[440px]  justify-between flex flex-col hidden">
+                
+                    <!-- Steps indicator -->
+                    <div class="flex mx-12 mt-6 lg:mx-auto lg:mt-8">
+                        <!-- Step 1 -->
+                        <div>
+                            <div class="w-6 h-6 lg:w-8 lg:h-8 rounded-full bg-primary flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white fill-current" viewBox="0 0 24 24">
+                                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                                </svg>
+                            </div>
+                              
+                        </div>
+                        
+                        <!-- Step 2 -->
+                        <div class="flex items-center justify-center">
+                            <div class="w-10 lg:w-[58px] h-[2px] bg-primary"></div>
+                            <div class="w-6 h-6 lg:w-8 lg:h-8 rounded-full bg-primary flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white fill-current" viewBox="0 0 24 24">
+                                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 active -->
+                        <div class="flex items-center justify-center">
+                            <div class="w-10 lg:w-[58px] h-[2px] bg-primary"></div>
+                            <div class="w-6 h-6 lg:w-8 lg:h-8 rounded-full border-2 border-primary flex items-center justify-center">
+                                <div class="w-2 h-2 lg:w-[10px] lg:h-[10px] bg-primary rounded-full"></div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="flex items-center justify-center">
+                            <div class="w-10 lg:w-[58px] h-[2px] bg-[#D1D5DB]"></div>
+                            <div class="w-6 h-6 lg:w-8 lg:h-8 rounded-full border-2 border-[#D1D5DB]"></div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col justify-between">
+                        <div class="mx-8">
+                            <p class="pl-1 pb-1 text-xl text-smokeBlack">First Name</p>
+                            <input type="text" name="firstName" placeholder="First Name" class="bg-inputs w-full p-2.5 rounded-[4px] mb-6 text-smokeBlack" />
+                        </div>
+                        <div class="mx-8">
+                            <p class="pl-1 pb-1 text-xl text-smokeBlack">Last Name</p>
+                            <input type="text" name="lastName" placeholder="Last Name" class="bg-inputs w-full p-2.5 rounded-[4px] text-smokeBlack" />
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-center mb-4">
+                        <button class="w-[100px] p-3 rounded text-smokeBlack font-medium bg-surface shadow-2xl mr-4" onclick="previousCard()">Back</button>
+                        <button class="w-[100px] p-3 rounded text-surface font-bold bg-accent shadow-2xl" onclick="nextCard()">Yes</button>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div id="cardContainer4" data-card="4" class="rounded-lg bg-surface shadow-2xl w-[312px] h-[312px] lg:w-[360px] lg:h-[360px] xl:w-[440px] xl:h-[440px]  justify-between flex flex-col hidden">
+                
+                    <!-- Steps indicator -->
+                    <div class="flex mx-12 mt-6 lg:mx-auto lg:mt-8">
+                        <!-- Step 1 -->
+                        <div>
+                            <div class="w-6 h-6 lg:w-8 lg:h-8 rounded-full bg-primary flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white fill-current" viewBox="0 0 24 24">
+                                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                                </svg>
+                            </div>
+                              
+                        </div>
+                        
+                        <!-- Step 2 -->
+                        <div class="flex items-center justify-center">
+                            <div class="w-10 lg:w-[58px] h-[2px] bg-primary"></div>
+                            <div class="w-6 h-6 lg:w-8 lg:h-8 rounded-full bg-primary flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white fill-current" viewBox="0 0 24 24">
+                                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="flex items-center justify-center">
+                            <div class="w-10 lg:w-[58px] h-[2px] bg-primary"></div>
+                            <div class="w-6 h-6 lg:w-8 lg:h-8 rounded-full bg-primary flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white fill-current" viewBox="0 0 24 24">
+                                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 active -->
+                        <div class="flex items-center justify-center">
+                            <div class="w-10 lg:w-[58px] h-[2px] bg-primary"></div>
+                            <div class="w-6 h-6 lg:w-8 lg:h-8 rounded-full border-2 border-primary flex items-center justify-center">
+                                <div class="w-2 h-2 lg:w-[10px] lg:h-[10px] bg-primary rounded-full"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mx-8 mb-24">
+                        <p class="pl-1 pb-1 text-xl text-smokeBlack">Phone Number *</p>
+                        <div class="flex">
+                            <select type="number" name="area" aria-label="code area" class="bg-inputs p-2.5 rounded-[4px] min-w-[80px] w-1/6 mr-2 bg-[#E6E6E6]">
+                                <option value="+234">+234</option>
+                                <option value="+54">+54</option>
+                                <option value="+1">+1</option>
+                            </select>
+                            <input type="number" name="phone" placeholder="0000 000 0000" class="bg-inputs w-full p-2.5 rounded-[4px]" />
+                        </div>
+                    </div>
+
+                    
+                    <div class="flex justify-center mb-4">
+                        <button class="w-[100px] p-3 rounded text-smokeBlack font-medium bg-surface shadow-2xl mr-4" onclick="previousCard()">Back</button>
+                        <button class="w-[100px] p-3 rounded text-surface font-bold bg-accent shadow-2xl" onclick="nextCard()">Yes</button>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div id="cardContainer5" data-card="5" class="rounded-lg bg-surface shadow-2xl w-[312px] h-[312px] lg:w-[360px] lg:h-[360px] xl:w-[440px] xl:h-[440px]  justify-between flex flex-col hidden">
+                
+                    <!-- Steps indicator -->
+                    <div class="flex mx-12 mt-6 lg:mx-auto lg:mt-8">
+                        <!-- Step 1 -->
+                        <div>
+                            <div class="w-6 h-6 lg:w-8 lg:h-8  rounded-full bg-primary flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white fill-current" viewBox="0 0 24 24">
+                                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                                </svg>
+                            </div>
+                              
+                        </div>
+                        
+                        <!-- Step 2 -->
+                        <div class="flex items-center justify-center">
+                            <div class="w-10 lg:w-[58px] h-[2px] bg-primary"></div>
+                            <div class="w-6 h-6 lg:w-8 lg:h-8  rounded-full bg-primary flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white fill-current" viewBox="0 0 24 24">
+                                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="flex items-center justify-center">
+                            <div class="w-10 lg:w-[58px] h-[2px] bg-primary"></div>
+                            <div class="w-6 h-6 lg:w-8 lg:h-8  rounded-full bg-primary flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white fill-current" viewBox="0 0 24 24">
+                                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 active -->
+                        <div class="flex items-center justify-center">
+                            <div class="w-10 lg:w-[58px] h-[2px] bg-primary"></div>
+                            <div class="w-6 h-6 lg:w-8 lg:h-8  rounded-full bg-primary flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-white fill-current" viewBox="0 0 24 24">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="text-3xl text-primary mx-6 text-center">
+                        <span class="text-accent font-black">Congrats!</span><br>
+                        <span class="text-primary font-normal">You may qualify compensation.</span><br>
+                        <span class="text-primary font-normal">Call us now a free case evaluation</span>
+                    </p>
+                    
+                    <div class="flex justify-center mb-4">
+                        <button class="p-3 rounded text-surface font-bold bg-accent shadow-2xl">Click here to call us now</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="./assets/index.js"></script>
+        <script>
+            function nextCard() {
+                const currentCard = document.querySelector('[data-card]:not(.hidden)');
+                const currentCardNumber = currentCard.dataset.card;
+                const nextCardNumber = parseInt(currentCardNumber) + 1;
+                const nextCard = document.getElementById('cardContainer' + nextCardNumber);
+        
+                if (nextCard) {
+                    currentCard.classList.add('hidden');
+                    nextCard.classList.remove('hidden');
+                }
+            }
+
+            function previousCard() {
+                const currentCard = document.querySelector('[data-card]:not(.hidden)');
+                const currentCardNumber = currentCard.dataset.card;
+                const previousCardNumber = parseInt(currentCardNumber) - 1;
+                const previousCard = document.getElementById('cardContainer' + previousCardNumber);
+
+                if (previousCard) {
+                    currentCard.classList.add('hidden');
+                    previousCard.classList.remove('hidden');
+                }
+            }
+        </script>
+
+        <script>
+            const element = document.getElementById('arrow');
+            let isExpanded = false;
+            const maxWidth = 500;
+            const minWidth = 450;
+            let currentWidth = minWidth;
+            const increment = 1;
+            const animationSpeed = 10;
+            
+            function animateElement() {
+            if (isExpanded) {
+                currentWidth -= increment;
+                if (currentWidth <= minWidth) {
+                isExpanded = false;
+                }
+            } else {
+                currentWidth += increment;
+                if (currentWidth >= maxWidth) {
+                isExpanded = true;
+                }
+            }
+            element.style.width = currentWidth + 'px';
+
+            setTimeout(animateElement, animationSpeed);
+            }
+
+            animateElement();
+        </script>
+    </body>
+</html>
